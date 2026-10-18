@@ -72,6 +72,7 @@ await db.transaction(async (tx) => {
           alt: img.alt,
           width: img.width,
           height: img.height,
+          blurDataUrl: "blurDataUrl" in img ? (img.blurDataUrl as string) : null,
           position,
         }))
       );

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { blurProps } from "@/lib/images";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { WhatsAppButton } from "@/components/site/whatsapp-button";
@@ -111,6 +112,7 @@ export default async function CollectionPage({ params }: PageProps<"/collections
                   src={p.images[0].src}
                   alt={p.images[0].alt}
                   fill
+                  {...blurProps(p.images[0])}
                   preload={i === 0}
                   sizes={i === 0 ? "(min-width: 1024px) 30vw, 60vw" : "(min-width: 1024px) 20vw, 40vw"}
                   className="object-cover transition-transform duration-1400 ease-editorial group-hover:scale-105 motion-reduce:transition-none"

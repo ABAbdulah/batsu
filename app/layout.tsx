@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { preconnect } from "react-dom";
 import { CartProvider } from "@/components/cart/cart-provider";
 import { AnnouncementBar } from "@/components/site/announcement-bar";
 import { Footer } from "@/components/site/footer";
@@ -19,6 +20,8 @@ export const viewport: Viewport = {
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
+  // Product photos come from Shopify's CDN; open the connection before the first <img> asks.
+  preconnect("https://cdn.shopify.com");
   return (
     <html lang="en" className={`${jost.variable} ${pinyon.variable} ${cormorant.variable}`}>
       <body className="flex min-h-svh flex-col">

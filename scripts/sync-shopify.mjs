@@ -152,10 +152,28 @@ for (const handle of COLLECTION_HANDLES) {
   }
 }
 
+// Tiny WebP previews (~0.8 KB) for next/image blur placeholders, so photos never pop in from blank.
+async function blurDataUrl(src) {
+  const url = new URL(src);
+  url.search = "?width=10";
+  const res = await fetch(url, { headers: { accept: "image/webp" } });
+  if (!res.ok) throw new Error(`blur ${src}: ${res.status}`);
+  return `data:image/webp;base64,${Buffer.from(await res.arrayBuffer()).toString("base64")}`;
+}
+
+async function withBlur(images) {
+  for (let i = 0; i < images.length; i += 6) {
+    await Promise.all(images.slice(i, i + 6).map(async (img) => (img.blurDataUrl = await blurDataUrl(img.src))));
+  }
+}
+
+const synced = products.map((p) => toProduct(p, collectionsByProduct));
+await withBlur([...synced.flatMap((p) => p.images), ...collections.map((c) => c.image).filter(Boolean)]);
+
 const catalog = {
   syncedAt: new Date().toISOString(),
   collections,
-  products: products.map((p) => toProduct(p, collectionsByProduct)),
+  products: synced,
 };
 await writeFile(new URL("../lib/data/catalog.json", import.meta.url), `${JSON.stringify(catalog, null, 2)}\n`);
 console.log(`Synced ${catalog.products.length} products, ${collections.length} collections`);

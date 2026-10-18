@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { blurProps } from "@/lib/images";
 import type { ProductImage } from "@/lib/data/types";
 
 type Tile = { image: ProductImage; wide: boolean };
@@ -39,8 +40,7 @@ export function Gallery({ images, title }: { images: ProductImage[]; title: stri
               sizes="86vw"
               preload={i === 0}
               loading={i === 0 ? "eager" : "lazy"}
-              placeholder={image.blurDataUrl ? "blur" : "empty"}
-              blurDataURL={image.blurDataUrl}
+              {...blurProps(image)}
               className="object-cover"
             />
           </li>
@@ -58,8 +58,7 @@ export function Gallery({ images, title }: { images: ProductImage[]; title: stri
               fill
               sizes={wide ? "(min-width: 1024px) 60vw, 100vw" : "(min-width: 1024px) 30vw, 50vw"}
               loading={i < 2 ? "eager" : "lazy"}
-              placeholder={image.blurDataUrl ? "blur" : "empty"}
-              blurDataURL={image.blurDataUrl}
+              {...blurProps(image)}
               className="object-cover transition-transform duration-1400 ease-editorial group-hover:scale-[1.04] motion-reduce:transition-none"
             />
           </li>

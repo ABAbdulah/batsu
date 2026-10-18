@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { blurProps } from "@/lib/images";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button-variants";
 import type { ProductImage } from "@/lib/data";
@@ -21,7 +22,7 @@ export function EditorialBand({
       <div className="absolute inset-0 grid sm:grid-cols-2">
         {images.map((image, i) => (
           <div key={image.src} className={`relative overflow-hidden ${i === 0 ? "hidden sm:block" : ""}`}>
-            <Image src={image.src} alt={image.alt} fill sizes="(min-width: 640px) 50vw, 100vw" className="parallax object-cover" />
+            <Image src={image.src} alt={image.alt} fill sizes="(min-width: 640px) 50vw, 100vw" {...blurProps(image)} className="parallax object-cover" />
           </div>
         ))}
       </div>

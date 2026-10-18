@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { blurProps } from "@/lib/images";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import type { Product } from "@/lib/data";
@@ -30,6 +31,7 @@ export function ProductCard({ product, aspect = "portrait", badge, showMyth, siz
               alt=""
               fill
               sizes={sizes}
+              {...blurProps(image)}
               className="object-cover transition-transform duration-1000 ease-editorial group-hover:scale-[1.045] motion-reduce:transition-none"
             />
           )}

@@ -2,6 +2,7 @@
 
 import { Fragment, useId, useRef, useState, type CSSProperties, type KeyboardEvent } from "react";
 import Image from "next/image";
+import { blurProps } from "@/lib/images";
 import Link from "next/link";
 import { useReducedMotion } from "motion/react";
 import * as m from "motion/react-m";
@@ -225,6 +226,8 @@ function MythHeroInner({ pieces }: { pieces: HeroPiece[] }) {
                       sizes="(min-width: 1024px) 45vw, 100vw"
                       preload={i === 0}
                       loading="eager"
+                      fetchPriority={i === 0 ? "high" : "low"}
+                      {...blurProps(piece.image)}
                       style={{ objectPosition: piece.focus }}
                       className="object-cover"
                     />

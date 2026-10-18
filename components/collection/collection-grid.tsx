@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Image from "next/image";
+import { blurProps } from "@/lib/images";
 import Link from "next/link";
 import { QuickAdd } from "@/components/cart/quick-add";
 import type { Product, ProductImage, Size } from "@/lib/data/types";
@@ -152,6 +153,7 @@ function CollectionCard({ product: p, eager }: { product: GridProduct; eager: bo
               alt={primary.alt}
               fill
               sizes={sizes}
+              {...blurProps(primary)}
               loading={eager ? "eager" : "lazy"}
               className="object-cover transition-transform duration-1200 ease-editorial group-hover:scale-[1.04] motion-reduce:transition-none"
             />
