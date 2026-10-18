@@ -5,7 +5,7 @@ import type { Collection, Product } from "./types";
 export type * from "./types";
 
 // Editorial copy per collection. Handles match the Shopify store so URLs survive the move.
-const collectionCopy: Record<string, Omit<Collection, "handle" | "productHandles">> = {
+const collectionCopy: Record<string, Pick<Collection, "title" | "navLabel" | "tagline" | "intro">> = {
   "summer-vol3": { title: "New In", tagline: "The newest pieces." },
   "modern-myths": {
     title: "Modern Myths 25'",
@@ -34,6 +34,7 @@ const productsByHandle = new Map(products.map((p) => [p.handle, p]));
 const collections: Collection[] = catalog.collections.map((c) => ({
   handle: c.handle,
   productHandles: c.products,
+  image: c.image,
   ...collectionCopy[c.handle],
 }));
 

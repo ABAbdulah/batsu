@@ -68,3 +68,31 @@ export function ArrowRightIcon(props: IconProps) {
     </Icon>
   );
 }
+
+export function CashIcon(props: IconProps) {
+  return (
+    <Icon strokeWidth={1.4} {...props}>
+      <rect x="2.5" y="6" width="19" height="12" rx="1.5" />
+      <circle cx="12" cy="12" r="2.6" />
+      <path d="M6 9.5v5M18 9.5v5" />
+    </Icon>
+  );
+}
+
+export function ExchangeIcon(props: IconProps) {
+  return (
+    <Icon strokeWidth={1.4} {...props}>
+      <path d="M4 8h13l-3-3M20 16H7l3 3" />
+    </Icon>
+  );
+}
+
+export function TruckIcon(props: IconProps) {
+  return (
+    <Icon strokeWidth={1.4} {...props}>
+      <path d="M2.5 6.5h11v9h-11zM13.5 9.5h4l3 3v3h-7" />
+      <circle cx="6.5" cy="17.5" r="1.6" />
+      <circle cx="17" cy="17.5" r="1.6" />
+    </Icon>
+  );
+}

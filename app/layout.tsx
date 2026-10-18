@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { AnnouncementBar } from "@/components/site/announcement-bar";
+import { Footer } from "@/components/site/footer";
 import { Header } from "@/components/site/header";
+import { WhatsAppButton } from "@/components/site/whatsapp-button";
 import { MotionProvider } from "@/components/motion/motion-provider";
 import { cormorant, jost, pinyon } from "@/lib/fonts";
 import { site } from "@/lib/site";
@@ -25,6 +27,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <AnnouncementBar />
           <Header />
           <main className="flex-1">{children}</main>
+          <Footer />
+          <WhatsAppButton />
         </MotionProvider>
       </body>
     </html>

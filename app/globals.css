@@ -113,3 +113,19 @@
   letter-spacing: var(--tracking-label);
   text-transform: uppercase;
 }
+
+/* Editorial parallax: a CSS scroll-driven animation, so it costs no JS. Browsers without
+   support (and reduced-motion users) see a still image. */
+@keyframes parallax-drift {
+  from { translate: 0 -6%; }
+  to { translate: 0 6%; }
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .parallax {
+      scale: 1.14;
+      animation: parallax-drift linear both;
+      animation-timeline: view();
+    }
+  }
+}

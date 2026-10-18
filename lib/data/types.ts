@@ -44,5 +44,6 @@ export type Collection = {
   navLabel?: string;
   tagline?: string;
   intro?: string;
+  image?: ProductImage;
   productHandles: string[];
 };
