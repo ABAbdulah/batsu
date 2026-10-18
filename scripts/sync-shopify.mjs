@@ -12,6 +12,8 @@ const COLLECTION_HANDLES = [
   "t-shirts",
 ];
 const MAX_IMAGE_WIDTH = 2000;
+// Shopify listings end with a wide, short size-chart image; keep it out of the photo gallery.
+const isSizeChart = (img) => img.width / img.height >= 3;
 const SIZE_ORDER = ["XS", "S", "M", "L", "XL", "XXL"];
 const SIZE_ALIASES = {
   xs: "XS",
@@ -81,6 +83,16 @@ function imageUrl(src, width) {
   return url.toString();
 }
 
+function toImage(img, alt) {
+  const scale = Math.min(1, MAX_IMAGE_WIDTH / img.width);
+  return {
+    src: imageUrl(img.src, img.width),
+    width: Math.round(img.width * scale),
+    height: Math.round(img.height * scale),
+    alt: img.alt || alt,
+  };
+}
+
 function toProduct(p, collectionsByProduct) {
   const title = p.title.replace(/\s+-\s+/g, "-");
   const sizes = p.variants
@@ -91,6 +103,7 @@ function toProduct(p, collectionsByProduct) {
     }))
     .sort((a, b) => SIZE_ORDER.indexOf(a.size) - SIZE_ORDER.indexOf(b.size));
   const price = Math.round(Number(p.variants[0].price));
+  const chart = p.images.find(isSizeChart);
   const compareAt = Number(p.variants[0].compare_at_price ?? 0);
   return {
     handle: p.handle,
@@ -99,27 +112,41 @@ function toProduct(p, collectionsByProduct) {
     ...(compareAt > price ? { compareAtPrice: Math.round(compareAt) } : {}),
     ...parseBody(p.body_html ?? ""),
     sizes,
-    images: p.images.map((img, i) => {
-      const scale = Math.min(1, MAX_IMAGE_WIDTH / img.width);
-      return {
-        src: imageUrl(img.src, img.width),
-        width: Math.round(img.width * scale),
-        height: Math.round(img.height * scale),
-        alt: img.alt || `${title}, image ${i + 1}`,
-      };
-    }),
+    images: p.images.filter((img) => !isSizeChart(img)).map((img, i) => toImage(img, `${title}, image ${i + 1}`)),
+    ...(chart ? { sizeChart: toImage(chart, `${title} size chart`) } : {}),
     collections: collectionsByProduct.get(p.handle) ?? [],
     createdAt: p.created_at,
   };
 }
 
+// Shopify omits collection image dimensions; read them from the JPEG/PNG header.
+async function imageSize(src) {
+  const res = await fetch(src, { headers: { range: "bytes=0-65535" } });
+  const buf = Buffer.from(await res.arrayBuffer());
+  if (buf.readUInt32BE(0) === 0x89504e47) return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
+  for (let i = 2; i < buf.length - 9; ) {
+    const marker = buf[i + 1];
+    if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) {
+      return { width: buf.readUInt16BE(i + 7), height: buf.readUInt16BE(i + 5) };
+    }
+    i += 2 + buf.readUInt16BE(i + 2);
+  }
+  throw new Error(`Could not read dimensions of ${src}`);
+}
+
 const { products } = await getJson("/products.json?limit=250");
+const { collections: shopifyCollections } = await getJson("/collections.json?limit=250");
 const collectionsByProduct = new Map();
 const collections = [];
 for (const handle of COLLECTION_HANDLES) {
   const { products: items } = await getJson(`/collections/${handle}/products.json?limit=250`);
   if (items.length === 0) throw new Error(`Collection "${handle}" is empty or missing`);
-  collections.push({ handle, products: items.map((p) => p.handle) });
+  const image = shopifyCollections.find((c) => c.handle === handle)?.image;
+  collections.push({
+    handle,
+    products: items.map((p) => p.handle),
+    ...(image ? { image: toImage({ ...image, ...(await imageSize(image.src)) }, "") } : {}),
+  });
   for (const p of items) {
     collectionsByProduct.set(p.handle, [...(collectionsByProduct.get(p.handle) ?? []), handle]);
   }

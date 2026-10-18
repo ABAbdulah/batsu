@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-18T19:48:03.933Z",
+  "syncedAt": "2026-10-18T20:10:41.558Z",
   "collections": [
     {
       "handle": "modern-myths",
@@ -8,7 +8,13 @@
         "echo-skin",
         "the-lineage",
         "night-oracle"
-      ]
+      ],
+      "image": {
+        "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/collections/DSC02639_copy_2.jpg?v=1762871414&width=2000",
+        "width": 2000,
+        "height": 3000,
+        "alt": ""
+      }
     },
     {
       "handle": "summer-vol3",
@@ -19,7 +25,13 @@
         "the-fawn",
         "the-lanes",
         "the-sepal"
-      ]
+      ],
+      "image": {
+        "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/collections/IMG_2919_JPG.jpg?v=1790241897",
+        "width": 896,
+        "height": 1200,
+        "alt": ""
+      }
     },
     {
       "handle": "summer-vol-2",
@@ -30,7 +42,13 @@
         "florae-shirt",
         "petal-shirt",
         "scallop-shirt"
-      ]
+      ],
+      "image": {
+        "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/collections/70755487-C69C-43AA-BB37-4D996259EA02.png?v=1745150485",
+        "width": 1366,
+        "height": 768,
+        "alt": ""
+      }
     },
     {
       "handle": "summer-collection-oversize-shirt-streetwear",
@@ -41,7 +59,13 @@
         "summer-shirt-summer-clothes-summer-fabric-womens-shirt-unisex-shirt-waffle-shirt",
         "shirt-summer-shirt-unisex-shirt-summer-clothes-printed-shirt-polka-print-shirt",
         "summer-shirt-summer-clothes-shirt-summer-fabric-dobby-shirt"
-      ]
+      ],
+      "image": {
+        "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/collections/IMG_1245.jpg?v=1737979734",
+        "width": 1148,
+        "height": 1294,
+        "alt": "Batsu streetwear summer collection of oversize shirts"
+      }
     },
     {
       "handle": "winter-collection-streetwear",
@@ -50,7 +74,13 @@
         "winter-coat-winter-clothes-winter-vest-winter-fabric-poseidon-vest",
         "gloria-coat-winter-clothes-winter-womens-coat-pk",
         "long-coat-denim-coat-winter-coat-winter-clothing-reverse-reverie"
-      ]
+      ],
+      "image": {
+        "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/collections/IMG_6717.jpg?v=1747643425&width=2000",
+        "width": 2000,
+        "height": 3000,
+        "alt": "Batsu, streetwear winter collection."
+      }
     },
     {
       "handle": "t-shirts",
@@ -58,7 +88,13 @@
         "eye-t",
         "hybrid-t",
         "iris-t"
-      ]
+      ],
+      "image": {
+        "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/collections/77700689-B0B1-4505-A3D6-DA1AC190E942.jpg?v=1752238085&width=2000",
+        "width": 2000,
+        "height": 2191,
+        "alt": ""
+      }
     }
   ],
   "products": [
@@ -107,14 +143,14 @@
           "width": 896,
           "height": 1200,
           "alt": "The Aqua, image 3"
-        },
-        {
-          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Screenshot2026-09-24132231.jpg?v=1790241208",
-          "width": 784,
-          "height": 172,
-          "alt": "The Aqua, image 4"
         }
       ],
+      "sizeChart": {
+        "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Screenshot2026-09-24132231.jpg?v=1790241208",
+        "width": 784,
+        "height": 172,
+        "alt": "The Aqua size chart"
+      },
       "collections": [
         "summer-vol3"
       ],
@@ -159,14 +195,14 @@
           "width": 1080,
           "height": 1350,
           "alt": "The Lanes, image 2"
-        },
-        {
-          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Screenshot2026-09-24132231.jpg?v=1790241208",
-          "width": 784,
-          "height": 172,
-          "alt": "The Lanes, image 3"
         }
       ],
+      "sizeChart": {
+        "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Screenshot2026-09-24132231.jpg?v=1790241208",
+        "width": 784,
+        "height": 172,
+        "alt": "The Lanes size chart"
+      },
       "collections": [
         "summer-vol3"
       ],
@@ -211,14 +247,14 @@
           "width": 1792,
           "height": 2400,
           "alt": "The Sepal, image 2"
-        },
-        {
-          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/fawn_size_chart.jpg?v=1790177632",
-          "width": 793,
-          "height": 181,
-          "alt": "The Sepal, image 3"
         }
       ],
+      "sizeChart": {
+        "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/fawn_size_chart.jpg?v=1790177632",
+        "width": 793,
+        "height": 181,
+        "alt": "The Sepal size chart"
+      },
       "collections": [
         "summer-vol3"
       ],
@@ -267,14 +303,14 @@
           "width": 896,
           "height": 1200,
           "alt": "The Moss, image 3"
-        },
-        {
-          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Screenshot_2026-09-24_132308.jpg?v=1790238346",
-          "width": 783,
-          "height": 166,
-          "alt": "The Moss, image 4"
         }
       ],
+      "sizeChart": {
+        "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Screenshot_2026-09-24_132308.jpg?v=1790238346",
+        "width": 783,
+        "height": 166,
+        "alt": "The Moss size chart"
+      },
       "collections": [
         "summer-vol3"
       ],
@@ -323,14 +359,14 @@
           "width": 1792,
           "height": 2400,
           "alt": "The Ink, image 3"
-        },
-        {
-          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Screenshot_2026-09-24_132308.jpg?v=1790238346",
-          "width": 783,
-          "height": 166,
-          "alt": "The Ink, image 4"
         }
       ],
+      "sizeChart": {
+        "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Screenshot_2026-09-24_132308.jpg?v=1790238346",
+        "width": 783,
+        "height": 166,
+        "alt": "The Ink size chart"
+      },
       "collections": [
         "summer-vol3"
       ],
@@ -379,14 +415,14 @@
           "width": 1792,
           "height": 2400,
           "alt": "The Fawn, image 3"
-        },
-        {
-          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/fawn_size_chart.jpg?v=1790177632",
-          "width": 793,
-          "height": 181,
-          "alt": "The Fawn, image 4"
         }
       ],
+      "sizeChart": {
+        "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/fawn_size_chart.jpg?v=1790177632",
+        "width": 793,
+        "height": 181,
+        "alt": "The Fawn size chart"
+      },
       "collections": [
         "summer-vol3"
       ],

@@ -4,13 +4,11 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   images: {
-    // Product photos come from the Shopify CDN until they move to Vercel Blob.
-    remotePatterns: [{ protocol: "https", hostname: "cdn.shopify.com", pathname: "/s/files/**" }],
-    formats: ["image/avif", "image/webp"],
+    // Shopify's CDN resizes product photos, so Vercel Image Optimization is never billed.
+    loader: "custom",
+    loaderFile: "./lib/image-loader.ts",
     deviceSizes: [360, 480, 640, 828, 1080, 1440, 1920],
-    imageSizes: [48, 96, 160, 256, 384],
-    // Catalogue photos change about once a year: transform each size once, then serve from cache.
-    minimumCacheTTL: 2678400,
+    imageSizes: [96, 160, 256, 384],
   },
   turbopack: {
     rules: {
