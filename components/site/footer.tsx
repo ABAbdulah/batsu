@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { NotifyForm } from "@/components/home/notify-form";
-import { getCollections } from "@/lib/data";
+import { getCollections, getSettings } from "@/lib/db/queries";
 import { policyLinks, site } from "@/lib/site";
 import { LogoMark } from "./logo";
 
-export function Footer() {
-  const shop = getCollections().filter((c) => c.handle !== "summer-vol3" && c.handle !== "t-shirts");
+export async function Footer() {
+  const [collections, { store }] = await Promise.all([getCollections(), getSettings()]);
+  const shop = collections.filter((c) => c.handle !== "summer-vol3" && c.handle !== "t-shirts");
   const heading = "text-[11px] font-medium tracking-[0.24em] text-[#8f8f8f] uppercase";
   return (
     <footer className="bg-ink text-white">
@@ -37,14 +38,14 @@ export function Footer() {
             </nav>
             <div className="col-span-2 flex flex-col gap-3 sm:col-span-1">
               <span className={heading}>Studio</span>
-              <a href={`mailto:${site.email}`} className="break-all hover:text-brand">
-                {site.email}
+              <a href={`mailto:${store.email}`} className="break-all hover:text-brand">
+                {store.email}
               </a>
               <span>{site.location}</span>
-              <a href={site.social.instagram} className="hover:text-brand">
+              <a href={store.social.instagram} className="hover:text-brand">
                 Instagram
               </a>
-              <a href={site.social.facebook} className="hover:text-brand">
+              <a href={store.social.facebook} className="hover:text-brand">
                 Facebook
               </a>
             </div>

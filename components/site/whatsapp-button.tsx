@@ -1,9 +1,12 @@
 import { WhatsAppIcon } from "@/components/icons";
+import { getSettings } from "@/lib/db/queries";
 import { whatsappLink } from "@/lib/site";
 
 // Floating chat button. Product pages pass the piece name so the chat opens with context.
-export function WhatsAppButton({ productName }: { productName?: string }) {
+export async function WhatsAppButton({ productName }: { productName?: string }) {
+  const { store } = await getSettings();
   const href = whatsappLink(
+    store.whatsapp,
     productName ? `Hi Batsu, I have a question about the ${productName}.` : "Hi Batsu, I have a question."
   );
   if (!href) return null;

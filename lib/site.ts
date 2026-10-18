@@ -1,23 +1,10 @@
-// Store settings. These move to the admin's settings table in Phase 2.
+// Static site constants. Editable store settings (announcement, WhatsApp, socials, shipping,
+// drop date, hero picks) live in lib/settings-defaults.ts and the `settings` table.
 export const site = {
   name: "Batsu",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.batsuofficial.com",
   description: "Batsu — a Lahore clothing label. Every piece carries its own myth.",
-  email: "officialbatsu@gmail.com",
   location: "Lahore, Pakistan",
-  /** International format without "+", e.g. 923001234567. The WhatsApp button hides until set. */
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER,
-  social: {
-    instagram: "https://www.instagram.com/batsuofficial/",
-    facebook: "https://www.facebook.com/profile.php?id=61557333935152",
-  },
-  announcement: {
-    text: "Modern Myths 25' is now live",
-    cta: "Read more",
-    href: "/collections/modern-myths",
-  },
-  /** Next drop for the countdown. Placeholder date until the client confirms it. */
-  nextDropAt: "2026-11-15T12:00:00+05:00",
 };
 
 // From the current Shopify policies (shipping: flat Rs. 250, 5–8 business days, Pakistan only;
@@ -46,8 +33,8 @@ export const policyLinks = [
   { label: "Contact us", href: "/pages/contact" },
 ];
 
-export function whatsappLink(message?: string): string | undefined {
-  if (!site.whatsapp) return undefined;
+export function whatsappLink(number: string | null, message?: string): string | undefined {
+  if (!number) return undefined;
   const text = message ? `?text=${encodeURIComponent(message)}` : "";
-  return `https://wa.me/${site.whatsapp}${text}`;
+  return `https://wa.me/${number}${text}`;
 }

@@ -5,12 +5,15 @@ export type ProductImage = {
   width: number;
   height: number;
   alt: string;
+  blurDataUrl?: string;
 };
 
 export type ProductSize = {
   variantId: string;
   size: Size;
   available: boolean;
+  /** Units on hand; only present when reading from the database. */
+  stock?: number;
 };
 
 export type ProductDetail = {
@@ -33,6 +36,7 @@ export type Product = {
   fitNote?: string;
   sizes: ProductSize[];
   images: ProductImage[];
+  sizeChart?: ProductImage;
   collections: string[];
   createdAt: string;
 };

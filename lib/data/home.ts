@@ -1,13 +1,4 @@
-import { getProduct } from ".";
-
-// The four "Four pieces. Four myths." hero panels, in order. `image` indexes the product's
-// photos; `focus` is the CSS object-position that keeps the piece in frame in a narrow panel.
-const heroPieces = [
-  { handle: "night-oracle", image: 2, focus: "50% 25%" },
-  { handle: "the-lineage", image: 2, focus: "50% 25%" },
-  { handle: "echo-skin", image: 0, focus: "50% 30%" },
-  { handle: "the-construct", image: 1, focus: "50% 20%" },
-];
+import { getProduct, getSettings } from "@/lib/db/queries";
 
 export type HeroPiece = {
   handle: string;
@@ -18,17 +9,24 @@ export type HeroPiece = {
   focus: string;
 };
 
-export function getHeroPieces(): HeroPiece[] {
-  return heroPieces.map(({ handle, image, focus }) => {
-    const product = getProduct(handle);
-    if (!product?.mythLine) throw new Error(`Hero piece "${handle}" is missing or has no myth line`);
-    return {
-      handle,
-      name: product.title,
-      mythLine: product.mythLine,
-      price: product.price,
-      image: { ...product.images[image], alt: `${product.title} on model` },
-      focus,
-    };
-  });
+// The four "Four pieces. Four myths." panels come from settings.hero (picked in the admin later).
+// `image` indexes the product's photos; `focus` keeps the piece in frame in a narrow panel.
+export async function getHeroPieces(): Promise<HeroPiece[]> {
+  const { hero } = await getSettings();
+  const pieces = await Promise.all(
+    hero.pieces.map(async ({ handle, image, focus }) => {
+      const product = await getProduct(handle);
+      if (!product?.mythLine || !product.images.length) return null;
+      const photo = product.images[image] ?? product.images[0];
+      return {
+        handle,
+        name: product.title,
+        mythLine: product.mythLine,
+        price: product.price,
+        image: { src: photo.src, width: photo.width, height: photo.height, alt: `${product.title} on model` },
+        focus,
+      };
+    })
+  );
+  return pieces.filter((p): p is HeroPiece => p !== null);
 }

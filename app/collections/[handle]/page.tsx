@@ -3,15 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CollectionGrid, type GridProduct } from "@/components/collection/collection-grid";
-import { getCollection, getCollectionProducts, getCollections, getProduct } from "@/lib/data";
+import { getCollection, getCollectionProducts, getCollections, getProduct } from "@/lib/db/queries";
 import { formatPrice } from "@/lib/format";
 
-export function generateStaticParams() {
-  return [...getCollections().map((c) => ({ handle: c.handle })), { handle: "all" }];
+export async function generateStaticParams() {
+  return [...(await getCollections()).map((c) => ({ handle: c.handle })), { handle: "all" }];
 }
 
 export async function generateMetadata({ params }: PageProps<"/collections/[handle]">): Promise<Metadata> {
-  const collection = getCollection((await params).handle);
+  const collection = await getCollection((await params).handle);
   if (!collection) return {};
   return {
     title: collection.title,
@@ -24,12 +24,12 @@ const pad = (n: number) => String(n).padStart(2, "0");
 
 export default async function CollectionPage({ params }: PageProps<"/collections/[handle]">) {
   const { handle } = await params;
-  const collection = getCollection(handle);
+  const collection = await getCollection(handle);
   if (!collection) notFound();
 
-  const listed = getCollectionProducts(handle);
+  const [listed, allCollections] = await Promise.all([getCollectionProducts(handle), getCollections()]);
   const collage = listed.filter((p) => p.images.length > 0).slice(0, 3);
-  const others = getCollections().filter((c) => c.handle !== handle && c.handle !== "summer-vol3");
+  const others = allCollections.filter((c) => c.handle !== handle && c.handle !== "summer-vol3");
 
   const gridProducts: GridProduct[] = listed.map((p) => ({
     handle: p.handle,
@@ -40,7 +40,7 @@ export default async function CollectionPage({ params }: PageProps<"/collections
     sizes: p.sizes,
   }));
 
-  const featureProduct = collection.feature && getProduct(collection.feature.productHandle);
+  const featureProduct = collection.feature && (await getProduct(collection.feature.productHandle));
   const feature =
     collection.feature && featureProduct
       ? {
@@ -80,7 +80,7 @@ export default async function CollectionPage({ params }: PageProps<"/collections
           )}
           <nav aria-label="Collections" className="mt-3">
             <ul className="flex flex-wrap gap-2">
-              {getCollections().map((c) => {
+              {allCollections.map((c) => {
                 const current = c.handle === handle;
                 return (
                   <li key={c.handle}>

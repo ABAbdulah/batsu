@@ -7,18 +7,23 @@ import { NextDrop } from "@/components/home/next-drop";
 import { ServiceStrip } from "@/components/home/service-strip";
 import { TeesBand } from "@/components/home/tees-band";
 import { ProductCard } from "@/components/product/product-card";
-import { getCollection, getCollectionProducts, getProduct } from "@/lib/data";
 import { getHeroPieces } from "@/lib/data/home";
-import { site } from "@/lib/site";
+import { getCollection, getCollectionProducts, getProduct, getProducts, getSettings } from "@/lib/db/queries";
 
 const SUMMER_VOL_1 = "summer-collection-oversize-shirt-streetwear";
 
-export default function HomePage() {
-  const heroPieces = getHeroPieces();
-  const arrivals = getCollectionProducts("summer-vol3");
-  const summerVol1 = getCollection(SUMMER_VOL_1);
-  const tunnelShot = getProduct("check-set-cord-set-summer-clothes-summer-fabric-shirt-embroidery")?.images[0];
-  const echoSkin = getProduct("echo-skin");
+export default async function HomePage() {
+  const [heroPieces, arrivals, summerVol1, checkSet, echoSkin, tees, settings] = await Promise.all([
+    getHeroPieces(),
+    getCollectionProducts("summer-vol3"),
+    getCollection(SUMMER_VOL_1),
+    getProduct("check-set-cord-set-summer-clothes-summer-fabric-shirt-embroidery"),
+    getProduct("echo-skin"),
+    getCollectionProducts("t-shirts"),
+    getSettings(),
+  ]);
+  const tunnelShot = checkSet?.images[0];
+  const mythProducts = await getProducts(heroPieces.map((p) => p.handle));
 
   return (
     <>
@@ -60,11 +65,11 @@ export default function HomePage() {
         />
       )}
 
-      <MythsGrid products={heroPieces.map((p) => getProduct(p.handle)!)} />
+      <MythsGrid products={mythProducts} />
 
-      {echoSkin && <NextDrop dropAt={site.nextDropAt} backdrop={echoSkin.images[0]} />}
+      {echoSkin && <NextDrop dropAt={settings.drop.at} teaser={settings.drop.teaser} backdrop={echoSkin.images[0]} />}
 
-      <TeesBand tees={getCollectionProducts("t-shirts")} />
+      <TeesBand tees={tees} />
     </>
   );
 }
