@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { BagIcon, SearchIcon } from "@/components/icons";
+import { BagButton } from "@/components/cart/bag-button";
+import { SearchIcon } from "@/components/icons";
 import { LogoMark } from "./logo";
 import { MobileMenu } from "./mobile-menu";
 import { NavLinks } from "./nav-links";
@@ -28,12 +29,7 @@ export function Header() {
           <Link href="/search" aria-label="Search" className="hidden size-11 place-items-center lg:grid">
             <SearchIcon className="size-4.75" />
           </Link>
-          <button type="button" aria-label="Bag, 0 items" className="relative grid size-11 place-items-center">
-            <BagIcon className="size-5 lg:size-4.75" />
-            <span className="absolute top-1.5 right-1.25 grid h-3.75 min-w-3.75 place-items-center rounded-full bg-ink px-1 text-[9px] text-white">
-              0
-            </span>
-          </button>
+          <BagButton />
         </div>
       </div>
     </header>

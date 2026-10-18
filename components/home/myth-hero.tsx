@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useReducedMotion } from "motion/react";
 import * as m from "motion/react-m";
 import { MotionProvider } from "@/components/motion/motion-provider";
-import { buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button-variants";
 import type { HeroPiece } from "@/lib/data/home";
 import { formatPrice } from "@/lib/format";
 

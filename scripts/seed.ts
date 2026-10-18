@@ -14,7 +14,7 @@ import { defaultSettings } from "../lib/settings-defaults";
 // Shopify admin export or the Phase 2 admin.
 const SEED_STOCK = 10;
 
-const url = process.env.DATABASE_URL;
+const url = process.env.DATABASE_URL_UNPOOLED ?? process.env.DATABASE_URL;
 if (!url) throw new Error("DATABASE_URL is not set");
 const pool = new Pool({ connectionString: url });
 const db = drizzle(pool, { schema });

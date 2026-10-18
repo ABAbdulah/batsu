@@ -1,3 +1,4 @@
+import { QuickAdd } from "@/components/cart/quick-add";
 import { ProductCard } from "@/components/product/product-card";
 import type { Product } from "@/lib/data";
 
@@ -12,7 +13,13 @@ export function MythsGrid({ products }: { products: Product[] }) {
         <ul className="grid grid-cols-2 gap-x-3 gap-y-10 lg:grid-cols-4 lg:gap-4">
           {products.map((p) => (
             <li key={p.handle}>
-              <ProductCard product={p} aspect="tall" showMyth sizes="(min-width: 1024px) 25vw, 50vw" />
+              <ProductCard
+                product={p}
+                aspect="tall"
+                showMyth
+                sizes="(min-width: 1024px) 25vw, 50vw"
+                overlay={<QuickAdd title={p.title} sizes={p.sizes} />}
+              />
             </li>
           ))}
         </ul>

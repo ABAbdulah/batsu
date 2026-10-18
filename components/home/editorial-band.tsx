@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button-variants";
 import type { ProductImage } from "@/lib/data";
 
 // Dark full-bleed band. The images drift slightly on scroll via a CSS scroll-driven animation

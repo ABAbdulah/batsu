@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { CartProvider } from "@/components/cart/cart-provider";
 import { AnnouncementBar } from "@/components/site/announcement-bar";
 import { Footer } from "@/components/site/footer";
 import { Header } from "@/components/site/header";
@@ -22,11 +23,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${jost.variable} ${pinyon.variable} ${cormorant.variable}`}>
       <body className="flex min-h-svh flex-col">
-        <AnnouncementBar />
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <WhatsAppButton />
+        <CartProvider>
+          <AnnouncementBar />
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <WhatsAppButton />
+        </CartProvider>
       </body>
     </html>
   );

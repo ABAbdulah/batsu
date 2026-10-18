@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { QuickAdd } from "@/components/cart/quick-add";
 import type { Product, ProductImage, Size } from "@/lib/data/types";
 import { formatPrice } from "@/lib/format";
 
@@ -143,32 +144,35 @@ function CollectionCard({ product: p, eager }: { product: GridProduct; eager: bo
   const sizes = "(min-width: 1024px) 33vw, 50vw";
   return (
     <article className="group flex flex-col gap-3.5">
-      <Link href={href} className="relative block aspect-4/5 overflow-hidden bg-stone">
-        {primary && (
-          <Image
-            src={primary.src}
-            alt={primary.alt}
-            fill
-            sizes={sizes}
-            loading={eager ? "eager" : "lazy"}
-            className="object-cover transition-transform duration-1200 ease-editorial group-hover:scale-[1.04] motion-reduce:transition-none"
-          />
-        )}
-        {secondary && (
-          <Image
-            src={secondary.src}
-            alt=""
-            fill
-            sizes={sizes}
-            className="bg-white object-cover opacity-0 transition-opacity duration-600 group-hover:opacity-100 motion-reduce:transition-none"
-          />
-        )}
+      <div data-card className="relative aspect-4/5 overflow-hidden bg-stone">
+        <Link href={href} aria-label={p.title} className="absolute inset-0 block">
+          {primary && (
+            <Image
+              src={primary.src}
+              alt={primary.alt}
+              fill
+              sizes={sizes}
+              loading={eager ? "eager" : "lazy"}
+              className="object-cover transition-transform duration-1200 ease-editorial group-hover:scale-[1.04] motion-reduce:transition-none"
+            />
+          )}
+          {secondary && (
+            <Image
+              src={secondary.src}
+              alt=""
+              fill
+              sizes={sizes}
+              className="bg-white object-cover opacity-0 transition-opacity duration-600 group-hover:opacity-100 motion-reduce:transition-none"
+            />
+          )}
+        </Link>
         {note && (
           <span className="absolute top-3 left-3 rounded-full bg-white px-2.5 py-1.5 text-[10px] font-semibold tracking-[0.12em] uppercase">
             {note}
           </span>
         )}
-      </Link>
+        <QuickAdd title={p.title} sizes={p.sizes} />
+      </div>
       <div className="flex items-baseline justify-between gap-3">
         <Link href={href} className="text-sm font-medium hover:text-brand">
           {p.title}

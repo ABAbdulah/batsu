@@ -20,6 +20,7 @@ export function ProductCard({ product, aspect = "portrait", badge, showMyth, siz
   return (
     <article className="group flex flex-col gap-3">
       <div
+        data-card
         className={`relative overflow-hidden bg-stone ${aspect === "tall" ? "aspect-2/3 bg-[#ebebe8]" : "aspect-4/5"}`}
       >
         <Link href={href} tabIndex={-1} aria-hidden className="absolute inset-0">
