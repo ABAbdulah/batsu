@@ -9,7 +9,7 @@ import { buttonVariants } from "@/components/ui/button";
 import type { HeroPiece } from "@/lib/data/home";
 import { formatPrice } from "@/lib/format";
 
-const ROTATE_SECONDS = 6.5;
+const ROTATE_SECONDS = 4;
 const pad = (n: number) => String(n).padStart(2, "0");
 // Desktop accordion geometry, as fractions of the strip: the active panel takes 70%, the rest share
 // 30%. Each panel is the full strip clipped to its slot (clip-path alone draws the edges, so
