@@ -5,7 +5,7 @@ import type { Collection, Product } from "./types";
 export type * from "./types";
 
 // Editorial copy per collection. Handles match the Shopify store so URLs survive the move.
-const collectionCopy: Record<string, Pick<Collection, "title" | "navLabel" | "tagline" | "intro">> = {
+const collectionCopy: Record<string, Pick<Collection, "title" | "navLabel" | "tagline" | "intro" | "feature">> = {
   "summer-vol3": { title: "New In", tagline: "The newest pieces." },
   "modern-myths": {
     title: "Modern Myths 25'",
@@ -18,6 +18,13 @@ const collectionCopy: Record<string, Pick<Collection, "title" | "navLabel" | "ta
     tagline: "Louder days, brighter nights.",
     intro:
       "Hand-painted motifs, pleats in warm abstract tones and sun-faded tie-dye — six short-sleeve shirts made for the heat.",
+    feature: {
+      productHandle: "untitled-apr20_17-01",
+      imageIndex: 2,
+      text: "Hand-painted motifs,",
+      emphasis: "sun-washed dye,",
+      rest: "pleats that catch the light.",
+    },
   },
   "summer-collection-oversize-shirt-streetwear": { title: "Summer Vol'1" },
   "winter-collection-streetwear": { title: "Winter Vol'1" },
@@ -50,7 +57,15 @@ export function getAllProducts(): Product[] {
   return products;
 }
 
+const allProducts: Collection = {
+  handle: "all",
+  title: "All Products",
+  tagline: "Every piece, every myth.",
+  productHandles: products.map((p) => p.handle),
+};
+
 export function getCollection(handle: string): Collection | undefined {
+  if (handle === "all") return allProducts;
   return collections.find((c) => c.handle === handle);
 }
 

@@ -45,5 +45,7 @@ export type Collection = {
   tagline?: string;
   intro?: string;
   image?: ProductImage;
+  /** Dark editorial tile placed inside the product grid. */
+  feature?: { productHandle: string; imageIndex: number; text: string; emphasis: string; rest: string };
   productHandles: string[];
 };

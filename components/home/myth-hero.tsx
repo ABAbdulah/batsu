@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useReducedMotion } from "motion/react";
 import * as m from "motion/react-m";
+import { MotionProvider } from "@/components/motion/motion-provider";
 import { buttonVariants } from "@/components/ui/button";
 import type { HeroPiece } from "@/lib/data/home";
 import { formatPrice } from "@/lib/format";
@@ -37,7 +38,16 @@ const letterVariants = {
   shown: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.2, 0.7, 0.2, 1] as const } },
 };
 
+// Motion is only loaded on routes that animate with it, so pages like collections stay lighter.
 export function MythHero({ pieces }: { pieces: HeroPiece[] }) {
+  return (
+    <MotionProvider>
+      <MythHeroInner pieces={pieces} />
+    </MotionProvider>
+  );
+}
+
+function MythHeroInner({ pieces }: { pieces: HeroPiece[] }) {
   const id = useId();
   const [active, setActive] = useState(0);
   // Any manual pick stops the rotation for good; reduced-motion users never get it.

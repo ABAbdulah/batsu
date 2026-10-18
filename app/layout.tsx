@@ -3,7 +3,6 @@ import { AnnouncementBar } from "@/components/site/announcement-bar";
 import { Footer } from "@/components/site/footer";
 import { Header } from "@/components/site/header";
 import { WhatsAppButton } from "@/components/site/whatsapp-button";
-import { MotionProvider } from "@/components/motion/motion-provider";
 import { cormorant, jost, pinyon } from "@/lib/fonts";
 import { site } from "@/lib/site";
 import "./globals.css";
@@ -23,13 +22,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${jost.variable} ${pinyon.variable} ${cormorant.variable}`}>
       <body className="flex min-h-svh flex-col">
-        <MotionProvider>
-          <AnnouncementBar />
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-          <WhatsAppButton />
-        </MotionProvider>
+        <AnnouncementBar />
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );
