@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useId, useRef, useState, type KeyboardEvent } from "react";
+import { Fragment, useId, useRef, useState, type CSSProperties, type KeyboardEvent } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useReducedMotion } from "motion/react";
@@ -11,6 +11,27 @@ import { formatPrice } from "@/lib/format";
 
 const ROTATE_SECONDS = 6.5;
 const pad = (n: number) => String(n).padStart(2, "0");
+// Desktop accordion geometry, as fractions of the strip: the active panel takes 70%, the rest share
+// 30%. Each panel is the full strip clipped to its slot (clip-path alone draws the edges, so
+// neighbours can never gap or overlap mid-animation); the photo inside is a 70%-wide box slid to
+// the slot's centre.
+const ACTIVE_SHARE = 0.7;
+
+function panelGeometry(index: number, active: number, count: number) {
+  const rest = (1 - ACTIVE_SHARE) / (count - 1);
+  const widthOf = (i: number) => (i === active ? ACTIVE_SHARE : rest);
+  let left = 0;
+  for (let i = 0; i < index; i++) left += widthOf(i);
+  const width = widthOf(index);
+  const pct = (n: number) => `${(n * 100).toFixed(3)}%`;
+  // 1px gap on the left of every panel but the first shows the ink background as a divider.
+  const divider = index > 0 ? " + 1px" : "";
+  return {
+    "--panel-clip": `inset(0 ${pct(1 - left - width)} 0 calc(${pct(left)}${divider}))`,
+    "--panel-x": `translateX(${pct((left + width / 2 - ACTIVE_SHARE / 2) / ACTIVE_SHARE)})`,
+  } as CSSProperties;
+}
+
 const letterVariants = {
   hidden: { opacity: 0, y: "0.18em" },
   shown: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.2, 0.7, 0.2, 1] as const } },
@@ -162,38 +183,56 @@ export function MythHero({ pieces }: { pieces: HeroPiece[] }) {
         </div>
 
         {/* Panels: stacked crossfade on mobile, expanding accordion on desktop. Mouse-only
-            shortcut to the tabs above, so hidden from assistive tech. */}
+            shortcut to the tabs above, so hidden from assistive tech. On desktop every panel is
+            a fixed 70%-wide box that slides (transform) and is revealed (clip-path), so the
+            animation never triggers layout or resizes the photos. */}
         <div
           aria-hidden
-          className="relative order-1 h-[clamp(420px,72svh,560px)] min-w-0 overflow-hidden bg-ink lg:order-2 lg:flex lg:h-[min(820px,calc(100svh-40px))] lg:min-h-160 lg:flex-[999_1_640px]"
+          className="relative order-1 h-[clamp(420px,72svh,560px)] min-w-0 overflow-hidden bg-ink lg:order-2 lg:h-[min(820px,calc(100svh-40px))] lg:min-h-160 lg:flex-[999_1_640px]"
         >
           {pieces.map((piece, i) => {
             const selected = i === active;
-            const panelProps = {
-              tabIndex: -1,
-              "data-active": selected,
-              style: { flexGrow: selected ? 7 : 1 },
-              className:
-                "group/panel absolute inset-0 block overflow-hidden bg-[#e9e9e9] transition-[opacity,flex-grow] duration-1100 ease-panel data-[active=false]:pointer-events-none data-[active=false]:opacity-0 motion-reduce:transition-none lg:relative lg:inset-auto lg:h-full lg:min-w-0 lg:basis-0 lg:border-l lg:border-ink lg:data-[active=false]:pointer-events-auto lg:data-[active=false]:opacity-100",
-            };
-            const content = (
-              <>
-                <Image
-                  src={piece.image.src}
-                  alt=""
-                  fill
-                  sizes="(min-width: 1024px) 50vw, 100vw"
-                  preload={i === 0}
-                  loading="eager"
-                  style={{ objectPosition: piece.focus }}
-                  className="object-cover transition-[filter,transform] duration-[1100ms,1600ms] ease-editorial group-data-[active=false]/panel:scale-[1.12] group-data-[active=false]/panel:grayscale motion-reduce:transition-none"
-                />
-                {selected ? (
-                  <span className="absolute right-4 bottom-4 hidden rounded-full bg-white px-5 py-3 label-caps text-[11px] text-ink transition-colors duration-300 group-hover/panel:bg-brand lg:block">
+            return (
+              <Link
+                key={piece.handle}
+                href={`/products/${piece.handle}`}
+                tabIndex={-1}
+                onClick={(event) => {
+                  if (selected) return;
+                  event.preventDefault();
+                  show(i, true);
+                }}
+                data-active={selected}
+                style={panelGeometry(i, active, pieces.length)}
+                className="group/panel absolute inset-0 block overflow-hidden bg-[#e9e9e9] transition-opacity duration-700 ease-editorial data-[active=false]:pointer-events-none data-[active=false]:opacity-0 motion-reduce:transition-none lg:transition-[clip-path] lg:duration-1100 lg:ease-panel lg:[clip-path:var(--panel-clip)] lg:data-[active=false]:pointer-events-auto lg:data-[active=false]:opacity-100"
+              >
+                <span className="absolute inset-y-0 left-0 w-full lg:w-[70%] lg:transform-(--panel-x) lg:transition-transform lg:duration-1100 lg:ease-panel motion-reduce:transition-none">
+                  <span className="absolute inset-0 transition-transform duration-1600 ease-editorial group-data-[active=false]/panel:scale-[1.12] motion-reduce:transition-none">
+                    <Image
+                      src={piece.image.src}
+                      alt=""
+                      fill
+                      sizes="(min-width: 1024px) 45vw, 100vw"
+                      preload={i === 0}
+                      loading="eager"
+                      style={{ objectPosition: piece.focus }}
+                      className="object-cover"
+                    />
+                    {/* Pre-filtered copy faded with opacity: animating filter repaints every frame. */}
+                    <Image
+                      src={piece.image.src}
+                      alt=""
+                      fill
+                      sizes="(min-width: 1024px) 45vw, 100vw"
+                      loading="eager"
+                      style={{ objectPosition: piece.focus }}
+                      className="hidden object-cover grayscale-100 brightness-[1.04] transition-opacity duration-1100 ease-editorial group-data-[active=true]/panel:opacity-0 motion-reduce:transition-none lg:block"
+                    />
+                  </span>
+                  <span className="absolute right-4 bottom-4 hidden rounded-full bg-white px-5 py-3 label-caps text-[11px] text-ink transition-[opacity,background-color] duration-500 group-hover/panel:bg-brand group-data-[active=false]/panel:opacity-0 lg:block">
                     View piece +
                   </span>
-                ) : (
-                  <span className="absolute inset-0 hidden flex-col items-center justify-end gap-3.5 pb-7 lg:flex">
+                  <span className="absolute inset-0 hidden flex-col items-center justify-end gap-3.5 pb-7 transition-opacity duration-500 group-data-[active=true]/panel:opacity-0 lg:flex">
                     <span className="rotate-180 bg-white px-2.25 py-4 text-[11px] font-medium tracking-eyebrow text-ink uppercase [writing-mode:vertical-rl]">
                       {piece.name}
                     </span>
@@ -201,17 +240,8 @@ export function MythHero({ pieces }: { pieces: HeroPiece[] }) {
                       {pad(i + 1)}
                     </span>
                   </span>
-                )}
-              </>
-            );
-            return selected ? (
-              <Link key={piece.handle} href={`/products/${piece.handle}`} {...panelProps}>
-                {content}
+                </span>
               </Link>
-            ) : (
-              <button key={piece.handle} type="button" onClick={() => show(i, true)} {...panelProps}>
-                {content}
-              </button>
             );
           })}
         </div>
