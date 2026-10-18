@@ -50,6 +50,8 @@ cp .env.example .env.local   # fill in values
 npm run dev
 ```
 
+Until the database lands, the catalogue is a static snapshot of the live Shopify store in `lib/data/catalog.json`. Refresh it with `npm run sync:shopify`. Myth lines live in `lib/data/myths.ts`, and the hero pieces in `lib/data/home.ts`.
+
 ## Phases
 
 1. **Customer-facing store** ← current

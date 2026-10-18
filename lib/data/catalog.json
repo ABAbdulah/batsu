@@ -1,0 +1,2032 @@
+{
+  "syncedAt": "2026-10-18T19:48:03.933Z",
+  "collections": [
+    {
+      "handle": "modern-myths",
+      "products": [
+        "the-construct",
+        "echo-skin",
+        "the-lineage",
+        "night-oracle"
+      ]
+    },
+    {
+      "handle": "summer-vol3",
+      "products": [
+        "the-aqua",
+        "the-moss",
+        "the-ink",
+        "the-fawn",
+        "the-lanes",
+        "the-sepal"
+      ]
+    },
+    {
+      "handle": "summer-vol-2",
+      "products": [
+        "terra-dye-shirt",
+        "untitled-apr20_17-01",
+        "tarkashi-shirt",
+        "florae-shirt",
+        "petal-shirt",
+        "scallop-shirt"
+      ]
+    },
+    {
+      "handle": "summer-collection-oversize-shirt-streetwear",
+      "products": [
+        "black-shirt-summer-shirt-summer-clothes-shirt",
+        "winter-shirt-summer-shirt-shirt-grey-stitch-shirt",
+        "check-set-cord-set-summer-clothes-summer-fabric-shirt-embroidery",
+        "summer-shirt-summer-clothes-summer-fabric-womens-shirt-unisex-shirt-waffle-shirt",
+        "shirt-summer-shirt-unisex-shirt-summer-clothes-printed-shirt-polka-print-shirt",
+        "summer-shirt-summer-clothes-shirt-summer-fabric-dobby-shirt"
+      ]
+    },
+    {
+      "handle": "winter-collection-streetwear",
+      "products": [
+        "womens-vest-winter-clothes-female-vest-albus-41",
+        "winter-coat-winter-clothes-winter-vest-winter-fabric-poseidon-vest",
+        "gloria-coat-winter-clothes-winter-womens-coat-pk",
+        "long-coat-denim-coat-winter-coat-winter-clothing-reverse-reverie"
+      ]
+    },
+    {
+      "handle": "t-shirts",
+      "products": [
+        "eye-t",
+        "hybrid-t",
+        "iris-t"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "handle": "the-aqua",
+      "title": "The Aqua",
+      "price": 7500,
+      "description": [
+        "Introducing The Aqua, a contemporary shirt designed for the modern wardrobe. Crafted with precision and style, this piece seamlessly transitions from casual days to elevated occasions.",
+        "Featuring a refined cut that flatters various body types, The Aqua offers comfort without compromising on sophistication. The aqua-inspired palette brings a fresh, calming aesthetic that pairs effortlessly with both neutral and bold accents.",
+        "Premium fabric construction ensures durability and ease of care, making it a reliable staple for everyday wear. Whether styled solo or layered, The Aqua delivers versatility and timeless appeal."
+      ],
+      "details": [],
+      "sizes": [
+        {
+          "variantId": "54112259637548",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "54112259670316",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "54112259703084",
+          "size": "L",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/bloom01.png?v=1790241605",
+          "width": 1083,
+          "height": 1452,
+          "alt": "The Aqua, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/bloom04.jpg?v=1790241605",
+          "width": 1792,
+          "height": 2400,
+          "alt": "The Aqua, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/bloom05.jpg?v=1790241605",
+          "width": 896,
+          "height": 1200,
+          "alt": "The Aqua, image 3"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Screenshot2026-09-24132231.jpg?v=1790241208",
+          "width": 784,
+          "height": 172,
+          "alt": "The Aqua, image 4"
+        }
+      ],
+      "collections": [
+        "summer-vol3"
+      ],
+      "createdAt": "2026-09-24T14:22:35+05:00"
+    },
+    {
+      "handle": "the-lanes",
+      "title": "The Lanes",
+      "price": 5500,
+      "description": [
+        "The Lanes is a sophisticated statement piece that effortlessly elevates your wardrobe. Crafted with meticulous attention to detail, this shirt combines contemporary design with timeless elegance. The thoughtful construction and refined silhouette make it versatile enough for casual gatherings or more polished occasions.",
+        "Perfect for layering or wearing as a standalone piece, The Lanes adapts to your personal style. The quality fabric ensures comfort throughout the day while maintaining its shape and appearance wash after wash. Whether paired with tailored trousers for a professional look or casual denim for weekend ease, this shirt delivers understated sophistication.",
+        "An essential addition for anyone seeking versatile, well-made basics that transition seamlessly across seasons and settings."
+      ],
+      "details": [],
+      "sizes": [
+        {
+          "variantId": "54112255443244",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "54112255476012",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "54112255508780",
+          "size": "L",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/lanes02.png?v=1790241208",
+          "width": 1080,
+          "height": 1350,
+          "alt": "The Lanes, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/lanes03.png?v=1790241208",
+          "width": 1080,
+          "height": 1350,
+          "alt": "The Lanes, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Screenshot2026-09-24132231.jpg?v=1790241208",
+          "width": 784,
+          "height": 172,
+          "alt": "The Lanes, image 3"
+        }
+      ],
+      "collections": [
+        "summer-vol3"
+      ],
+      "createdAt": "2026-09-24T14:16:11+05:00"
+    },
+    {
+      "handle": "the-sepal",
+      "title": "The Sepal",
+      "price": 7500,
+      "description": [
+        "The Sepal is a timeless white shirt designed for modern versatility. Crafted with attention to detail, this essential piece features a clean, minimalist aesthetic that seamlessly transitions from casual everyday wear to polished professional settings.",
+        "The shirt's crisp white fabric offers a fresh, sophisticated foundation for any wardrobe. Its structured fit provides comfortable wearing throughout the day, while the classic design ensures it pairs effortlessly with jeans, skirts, trousers, or layering pieces.",
+        "A must-have investment piece for those who value quality basics and timeless fashion."
+      ],
+      "details": [],
+      "sizes": [
+        {
+          "variantId": "54112236994860",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "54112237027628",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "54112237060396",
+          "size": "L",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/sepal06.jpg?v=1790240364",
+          "width": 1792,
+          "height": 2400,
+          "alt": "The Sepal, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/sepal_02.jpg?v=1790240204",
+          "width": 1792,
+          "height": 2400,
+          "alt": "The Sepal, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/fawn_size_chart.jpg?v=1790177632",
+          "width": 793,
+          "height": 181,
+          "alt": "The Sepal, image 3"
+        }
+      ],
+      "collections": [
+        "summer-vol3"
+      ],
+      "createdAt": "2026-09-24T14:02:28+05:00"
+    },
+    {
+      "handle": "the-moss",
+      "title": "The Moss",
+      "price": 7500,
+      "description": [
+        "Premium moss-toned shirt crafted for effortless style. The Moss delivers understated elegance with a sophisticated earthy palette, perfect for layering or standalone wear. Made with quality fabric that drapes beautifully and maintains its shape through regular wear. Versatile enough for casual outings or elevated everyday looks. A wardrobe essential that pairs seamlessly with neutrals or bold accessories. With embroidery details in contrasting purple colour."
+      ],
+      "details": [],
+      "sizes": [
+        {
+          "variantId": "54112207143212",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "54112207175980",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "54112207208748",
+          "size": "L",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_2916_JPG.jpg?v=1790239592",
+          "width": 1194,
+          "height": 1600,
+          "alt": "The Moss, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_2917_JPG_e7518bd4-973f-4992-8b0f-fd8ce3a2dc49.jpg?v=1790239592",
+          "width": 896,
+          "height": 1200,
+          "alt": "The Moss, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_2919_JPG.jpg?v=1790239592",
+          "width": 896,
+          "height": 1200,
+          "alt": "The Moss, image 3"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Screenshot_2026-09-24_132308.jpg?v=1790238346",
+          "width": 783,
+          "height": 166,
+          "alt": "The Moss, image 4"
+        }
+      ],
+      "collections": [
+        "summer-vol3"
+      ],
+      "createdAt": "2026-09-24T13:50:42+05:00"
+    },
+    {
+      "handle": "the-ink",
+      "title": "The Ink",
+      "price": 6500,
+      "description": [
+        "The Ink is a timeless shirt that brings effortless style to your everyday wardrobe. Crafted with careful attention to detail, this piece combines comfort and sophistication for versatile wear, perfect for casual outings, layering, or making a understated statement. The classic Cuban collar design offers a refined silhouette that works with virtually any bottom, making it an essential addition to any closet looking for quality basics that endure."
+      ],
+      "details": [],
+      "sizes": [
+        {
+          "variantId": "54112183812396",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "54112183877932",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "54112183845164",
+          "size": "L",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/miro03.jpg?v=1790238887",
+          "width": 1792,
+          "height": 2400,
+          "alt": "The Ink, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/miro05.jpg?v=1790238887",
+          "width": 1792,
+          "height": 2400,
+          "alt": "The Ink, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/miro06.jpg?v=1790238887",
+          "width": 1792,
+          "height": 2400,
+          "alt": "The Ink, image 3"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Screenshot_2026-09-24_132308.jpg?v=1790238346",
+          "width": 783,
+          "height": 166,
+          "alt": "The Ink, image 4"
+        }
+      ],
+      "collections": [
+        "summer-vol3"
+      ],
+      "createdAt": "2026-09-24T13:43:26+05:00"
+    },
+    {
+      "handle": "the-fawn",
+      "title": "The Fawn",
+      "price": 4500,
+      "description": [
+        "The Fawn is a graceful blouse that brings natural elegance to your wardrobe. Designed with soft, flowing lines and refined details, this piece captures a delicate aesthetic perfect for both casual and polished occasions. Versatile and comfortable, it pairs effortlessly with your favorite bottoms for a look that feels both put-together and effortlessly chic."
+      ],
+      "details": [],
+      "sizes": [
+        {
+          "variantId": "54112156713260",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "54112156778796",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "54112156746028",
+          "size": "L",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/fawn02.jpg?v=1790177573",
+          "width": 1792,
+          "height": 2400,
+          "alt": "The Fawn, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/fawn05.jpg?v=1790177573",
+          "width": 896,
+          "height": 1200,
+          "alt": "The Fawn, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/fawn07.jpg?v=1790177573",
+          "width": 1792,
+          "height": 2400,
+          "alt": "The Fawn, image 3"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/fawn_size_chart.jpg?v=1790177632",
+          "width": 793,
+          "height": 181,
+          "alt": "The Fawn, image 4"
+        }
+      ],
+      "collections": [
+        "summer-vol3"
+      ],
+      "createdAt": "2026-09-24T13:13:38+05:00"
+    },
+    {
+      "handle": "echo-skin",
+      "title": "Echo Skin",
+      "price": 10500,
+      "description": [
+        "Reflections stitched in restraint — purity mirrored through maroon thread on white silence."
+      ],
+      "details": [],
+      "fitNote": "Model is wearing medium size.",
+      "sizes": [
+        {
+          "variantId": "52323738714412",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "52323738747180",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "52323738779948",
+          "size": "L",
+          "available": true
+        },
+        {
+          "variantId": "52323738812716",
+          "size": "XL",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/DSC02742copy.jpg?v=1762872838&width=2000",
+          "width": 2000,
+          "height": 3000,
+          "alt": "Echo Skin, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/DSC02747copy.jpg?v=1762872838&width=2000",
+          "width": 2000,
+          "height": 3000,
+          "alt": "Echo Skin, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/DSC02772copy.jpg?v=1762872838&width=2000",
+          "width": 2000,
+          "height": 3000,
+          "alt": "Echo Skin, image 3"
+        }
+      ],
+      "collections": [
+        "modern-myths"
+      ],
+      "createdAt": "2025-11-11T19:55:16+05:00"
+    },
+    {
+      "handle": "the-construct",
+      "title": "The Construct",
+      "price": 9500,
+      "description": [
+        "Geometry softened by hand; a grid of stillness holding quiet light."
+      ],
+      "details": [],
+      "fitNote": "Model is wearing size small.",
+      "sizes": [
+        {
+          "variantId": "52323736322348",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "52323736355116",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "52323736387884",
+          "size": "L",
+          "available": true
+        },
+        {
+          "variantId": "52323736420652",
+          "size": "XL",
+          "available": false
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/DSC02839copy.jpg?v=1762872500&width=2000",
+          "width": 2000,
+          "height": 3000,
+          "alt": "The Construct, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/DSC027842.jpg?v=1762872501&width=2000",
+          "width": 2000,
+          "height": 3000,
+          "alt": "The Construct, image 2"
+        }
+      ],
+      "collections": [
+        "modern-myths"
+      ],
+      "createdAt": "2025-11-11T19:51:06+05:00"
+    },
+    {
+      "handle": "night-oracle",
+      "title": "Night Oracle",
+      "price": 12500,
+      "description": [
+        "Moths drawn to unseen light — a symbol of fragile persistence beneath muted skies."
+      ],
+      "details": [],
+      "fitNote": "Model is wearing size small.",
+      "sizes": [
+        {
+          "variantId": "52323730063660",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "52323730096428",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "52323730129196",
+          "size": "L",
+          "available": true
+        },
+        {
+          "variantId": "52323730161964",
+          "size": "XL",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/DSC02609copy.jpg?v=1762872233&width=2000",
+          "width": 2000,
+          "height": 3000,
+          "alt": "Night Oracle, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/DSC02614copy.jpg?v=1762872233&width=2000",
+          "width": 2000,
+          "height": 3000,
+          "alt": "Night Oracle, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/DSC02619copy.jpg?v=1762872233&width=2000",
+          "width": 2000,
+          "height": 3000,
+          "alt": "Night Oracle, image 3"
+        }
+      ],
+      "collections": [
+        "modern-myths"
+      ],
+      "createdAt": "2025-11-11T19:46:25+05:00"
+    },
+    {
+      "handle": "the-lineage",
+      "title": "The Lineage",
+      "price": 12500,
+      "description": [
+        "Threads tracing heritage — a quiet ode to generational rhythm, reimagined in modern form. A pleated jacket, with embroidery to create a dialogue between culture and minimalism. A perfect jacket for fall/winter wardrobe."
+      ],
+      "details": [],
+      "fitNote": "Model is wearing size Medium.",
+      "sizes": [
+        {
+          "variantId": "52323726590252",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "52323726623020",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "52323726655788",
+          "size": "L",
+          "available": false
+        },
+        {
+          "variantId": "52323726688556",
+          "size": "XL",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/DSC02552copy.jpg?v=1762872108&width=2000",
+          "width": 2000,
+          "height": 3000,
+          "alt": "The Lineage, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/DSC02550copy.jpg?v=1762872108&width=2000",
+          "width": 2000,
+          "height": 3000,
+          "alt": "The Lineage, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/DSC02576copy.jpg?v=1762872098&width=2000",
+          "width": 2000,
+          "height": 3000,
+          "alt": "The Lineage, image 3"
+        }
+      ],
+      "collections": [
+        "modern-myths"
+      ],
+      "createdAt": "2025-11-11T19:38:57+05:00"
+    },
+    {
+      "handle": "eye-t",
+      "title": "Eye-T",
+      "price": 1890,
+      "description": [],
+      "details": [
+        {
+          "label": "Fabric",
+          "value": "Single Jersey, softer, lightweight."
+        },
+        {
+          "label": "Composition",
+          "value": "100% cotton"
+        },
+        {
+          "label": "GSM",
+          "value": "180"
+        },
+        {
+          "label": "Colour",
+          "value": "White"
+        },
+        {
+          "label": "Wash care",
+          "value": "Handle with care, DO NOT bleach."
+        },
+        {
+          "label": "Sleeve length",
+          "value": "Half sleeves"
+        },
+        {
+          "label": "Neckline",
+          "value": "Round Mock neck"
+        },
+        {
+          "label": "Fit",
+          "value": "Slim fit."
+        },
+        {
+          "label": "Graphic",
+          "value": "Inspiration taken from evil eyes, printed in single colour black with screen print method in the back."
+        }
+      ],
+      "sizes": [
+        {
+          "variantId": "51334824788268",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "51334824821036",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "51334824853804",
+          "size": "L",
+          "available": true
+        },
+        {
+          "variantId": "51334824886572",
+          "size": "XL",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/A34CF955-21E5-4CBF-98C4-A53F9AAEF73F.jpg?v=1752238706&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Eye-T, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/3A55B762-F32E-43BB-AFA8-A5CB84F31EFF.jpg?v=1752238706&width=2000",
+          "width": 2000,
+          "height": 2476,
+          "alt": "Eye-T, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/5FF1463B-B88E-4363-9398-30CA15CD0042.jpg?v=1752238756&width=2000",
+          "width": 2000,
+          "height": 1957,
+          "alt": "Eye-T, image 3"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/327DF689-0929-4A53-8DAB-D991D0F6E94F.jpg?v=1752238756&width=2000",
+          "width": 2000,
+          "height": 1957,
+          "alt": "Eye-T, image 4"
+        }
+      ],
+      "collections": [
+        "t-shirts"
+      ],
+      "createdAt": "2025-07-11T18:08:49+05:00"
+    },
+    {
+      "handle": "hybrid-t",
+      "title": "Hybrid-T",
+      "price": 1890,
+      "description": [],
+      "details": [
+        {
+          "label": "Fabric",
+          "value": "Single Jersey, softer, lightweight."
+        },
+        {
+          "label": "Composition",
+          "value": "100% cotton"
+        },
+        {
+          "label": "GSM",
+          "value": "180"
+        },
+        {
+          "label": "Colour",
+          "value": "Black"
+        },
+        {
+          "label": "Wash care",
+          "value": "Handle with care, DO NOT bleach."
+        },
+        {
+          "label": "Sleeve length",
+          "value": "Half sleeves"
+        },
+        {
+          "label": "Neckline",
+          "value": "Round Mock neck"
+        },
+        {
+          "label": "Fit",
+          "value": "Slim fit."
+        },
+        {
+          "label": "Graphic",
+          "value": "Inspiration taken from 2 different kinds of insects, merge together through reverse colouring method. Screen print in 3 screen in the back."
+        }
+      ],
+      "sizes": [
+        {
+          "variantId": "51334811124012",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "51334811156780",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "51334811189548",
+          "size": "L",
+          "available": true
+        },
+        {
+          "variantId": "51334811222316",
+          "size": "XL",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/3D2A8DD2-F9E8-4AC1-9C49-3F5BBBB525C0.jpg?v=1752238706&width=2000",
+          "width": 2000,
+          "height": 2267,
+          "alt": "Hybrid-T, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/4DE078FC-1B9E-4617-AA49-70834F3890EE.jpg?v=1752238706&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Hybrid-T, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/688A2DD0-5E5E-4963-B47A-BEBDF5DE9AC5.jpg?v=1752238756&width=2000",
+          "width": 2000,
+          "height": 1957,
+          "alt": "Hybrid-T, image 3"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/2834E710-22B7-467F-A4BF-92EC594689CC.jpg?v=1752238756&width=2000",
+          "width": 2000,
+          "height": 1957,
+          "alt": "Hybrid-T, image 4"
+        }
+      ],
+      "collections": [
+        "t-shirts"
+      ],
+      "createdAt": "2025-07-11T18:04:16+05:00"
+    },
+    {
+      "handle": "iris-t",
+      "title": "Iris-T",
+      "price": 1890,
+      "description": [],
+      "details": [
+        {
+          "label": "Fabric",
+          "value": "Single Jersey, softer, lightweight."
+        },
+        {
+          "label": "Composition",
+          "value": "100% cotton"
+        },
+        {
+          "label": "GSM",
+          "value": "180"
+        },
+        {
+          "label": "Wash care",
+          "value": "Handle with care, DO NOT bleach."
+        },
+        {
+          "label": "Sleeve length",
+          "value": "Half sleeves"
+        },
+        {
+          "label": "Neckline",
+          "value": "Round Mock neck"
+        },
+        {
+          "label": "Fit",
+          "value": "Slim fit."
+        },
+        {
+          "label": "Graphic",
+          "value": "Inspiration taken from human iris part of an eye, screen print in single colour in the back. In the front name is written on the left side of the shirt."
+        }
+      ],
+      "sizes": [
+        {
+          "variantId": "51334784090412",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "51334784123180",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "51334784155948",
+          "size": "L",
+          "available": true
+        },
+        {
+          "variantId": "51334784188716",
+          "size": "XL",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/C1383DAB-F68E-4A3C-B1E6-101B29DC91FA.jpg?v=1752238709&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Iris-T, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/C3DCAF57-7B8A-4605-8706-1E5455314E83.jpg?v=1752238706&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Iris-T, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/5FF1463B-B88E-4363-9398-30CA15CD0042.jpg?v=1752238756&width=2000",
+          "width": 2000,
+          "height": 1957,
+          "alt": "Iris-T, image 3"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/A2C4E9DF-1B42-46BB-A2DB-B7829CE248B5.jpg?v=1752238756&width=2000",
+          "width": 2000,
+          "height": 1957,
+          "alt": "Iris-T, image 4"
+        }
+      ],
+      "collections": [
+        "t-shirts"
+      ],
+      "createdAt": "2025-07-11T17:48:16+05:00"
+    },
+    {
+      "handle": "petal-shirt",
+      "title": "Petal Shirt",
+      "price": 3890,
+      "description": [
+        "This vibrant short-sleeved button-up shirt features a bold color palette and striking design. The upper half is a fiery orange-red hue, gradually fading into a soft white tie-dye effect toward the bottom. A large black symmetrical floral or sunburst-inspired pattern decorates the front, adding a strong visual element. The relaxed fit and classic collar make it both stylish and comfortable, ideal for making a statement in warm weather."
+      ],
+      "details": [],
+      "sizes": [
+        {
+          "variantId": "50964223263020",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "50964223328556",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "50964223295788",
+          "size": "L",
+          "available": false
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG-9300.jpg?v=1748623394&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Petal Shirt, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG-1981.jpg?v=1748623394",
+          "width": 1177,
+          "height": 1620,
+          "alt": "Petal Shirt, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG-1982.jpg?v=1748623394",
+          "width": 1620,
+          "height": 1177,
+          "alt": "Petal Shirt, image 3"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_9297.jpg?v=1748623394",
+          "width": 1620,
+          "height": 2160,
+          "alt": "Petal Shirt, image 4"
+        }
+      ],
+      "collections": [
+        "summer-vol-2"
+      ],
+      "createdAt": "2025-04-20T23:42:56+05:00"
+    },
+    {
+      "handle": "terra-dye-shirt",
+      "title": "Terra Dye Shirt",
+      "price": 3890,
+      "description": [
+        "This is a short-sleeved button-up shirt with a bold, earthy aesthetic. The upper half is a warm, rusty terracotta shade, while the lower half features a white tie-dye effect, creating a striking contrast. The relaxed fit and camp collar add to its casual yet stylish appeal, making it perfect for a laid-back yet confident look. The fabric appears lightweight, making it ideal for warm weather."
+      ],
+      "details": [],
+      "sizes": [
+        {
+          "variantId": "50964216348972",
+          "size": "S",
+          "available": false
+        },
+        {
+          "variantId": "50964216381740",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "50964216414508",
+          "size": "L",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/4B4BE4C2-6D03-43AE-BC94-07E3DFC014F5.jpg?v=1748527737&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Terra Dye Shirt, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/B4F31A99-ACA4-411F-9B6A-A21474007E08.jpg?v=1748527737&width=2000",
+          "width": 2000,
+          "height": 2372,
+          "alt": "Terra Dye Shirt, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_1698.jpg?v=1748527737&width=2000",
+          "width": 2000,
+          "height": 1500,
+          "alt": "Terra Dye Shirt, image 3"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_2535.jpg?v=1748527737&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Terra Dye Shirt, image 4"
+        }
+      ],
+      "collections": [
+        "summer-vol-2"
+      ],
+      "createdAt": "2025-04-20T23:37:27+05:00"
+    },
+    {
+      "handle": "tarkashi-shirt",
+      "title": "Tarkashi Shirt",
+      "price": 3890,
+      "description": [
+        "This white short-sleeved button-up shirt blends classic elegance with subtle yet intricate details. The standout design features hand-painted Fleur-de-lis motifs symmetrically placed on both sides of the front panel, adding a regal and sophisticated touch. A decorative bead-like embroidery runs along the button placket, enhancing the shirt’s refined aesthetic. The lightweight fabric and relaxed fit make it perfect for both casual and semi-formal wear, offering a balance of comfort and style."
+      ],
+      "details": [],
+      "sizes": [
+        {
+          "variantId": "50964210876716",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "50964210942252",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "50964210909484",
+          "size": "L",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_1678.jpg?v=1748623410",
+          "width": 1080,
+          "height": 1620,
+          "alt": "Tarkashi Shirt, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_1711.jpg?v=1748623410",
+          "width": 1207,
+          "height": 1620,
+          "alt": "Tarkashi Shirt, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_1699.jpg?v=1748623410&width=2000",
+          "width": 2000,
+          "height": 1500,
+          "alt": "Tarkashi Shirt, image 3"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_2551.jpg?v=1748623410&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Tarkashi Shirt, image 4"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_2553.jpg?v=1748623410&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Tarkashi Shirt, image 5"
+        }
+      ],
+      "collections": [
+        "summer-vol-2"
+      ],
+      "createdAt": "2025-04-20T23:33:55+05:00"
+    },
+    {
+      "handle": "florae-shirt",
+      "title": "Florae Shirt",
+      "price": 3690,
+      "description": [
+        "This is a white, short-sleeved button-up shirt with a relaxed fit and a classic camp collar. The fabric appears to be lightweight, possibly linen or cotton, making it breathable and ideal for warm weather. The standout feature is the scattered, hand-stitched crochet floral appliqués in soft pastel shades of blue, green, and cream, adding a charming, artisanal touch. The buttons have a decorative metallic design, enhancing the shirt’s vintage-inspired aesthetic."
+      ],
+      "details": [],
+      "sizes": [
+        {
+          "variantId": "50964203176236",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "50964203209004",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "50964203241772",
+          "size": "L",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_2546.jpg?v=1750270586&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Florae Shirt, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/072B67D5-1FE6-4DB7-A602-47033BD5A2CD.png?v=1750270586",
+          "width": 1994,
+          "height": 2569,
+          "alt": "Florae Shirt, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_1697.jpg?v=1750270586",
+          "width": 1273,
+          "height": 1621,
+          "alt": "Florae Shirt, image 3"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_2544.jpg?v=1748623384&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Florae Shirt, image 4"
+        }
+      ],
+      "collections": [
+        "summer-vol-2"
+      ],
+      "createdAt": "2025-04-20T23:29:57+05:00"
+    },
+    {
+      "handle": "scallop-shirt",
+      "title": "Scallop Shirt",
+      "price": 5590,
+      "description": [
+        "This elegant light blue short-sleeved button-up shirt blends classic tailoring with delicate details. The fabric features subtle vertical stripes, adding a refined texture. A standout feature is the scalloped embroidery running alongside the button placket, giving it a soft and artistic touch. The decorative buttons, including elephant motifs, enhance the uniqueness of the piece. The structured collar and relaxed fit make it versatile for both formal and casual wear."
+      ],
+      "details": [],
+      "sizes": [
+        {
+          "variantId": "50964188823852",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "50964188856620",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "50964188889388",
+          "size": "L",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_1585.jpg?v=1748623434&width=2000",
+          "width": 2000,
+          "height": 2273,
+          "alt": "Scallop Shirt, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_1702.jpg?v=1748623434",
+          "width": 1304,
+          "height": 1620,
+          "alt": "Scallop Shirt, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_2558.jpg?v=1745224553&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Scallop Shirt, image 3"
+        }
+      ],
+      "collections": [
+        "summer-vol-2"
+      ],
+      "createdAt": "2025-04-20T23:22:55+05:00"
+    },
+    {
+      "handle": "untitled-apr20_17-01",
+      "title": "Pleated Solara Shirt",
+      "price": 5890,
+      "description": [
+        "The shirt is a white, short-sleeved button-up with a classic pointed collar. It features a pleated design on the upper chest area, accentuated by a vibrant, abstract pattern in warm tones of orange, yellow, and red. The fabric appears lightweight, making it suitable for warm weather. The buttons are small and delicate, blending subtly into the design."
+      ],
+      "details": [
+        {
+          "label": "Fabric",
+          "value": "Cotton mix"
+        },
+        {
+          "label": "Type",
+          "value": "Breathable"
+        },
+        {
+          "label": "Stretch",
+          "value": "None"
+        },
+        {
+          "label": "Lining",
+          "value": "None"
+        }
+      ],
+      "sizes": [
+        {
+          "variantId": "50963710869804",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "50963710902572",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "50963710935340",
+          "size": "L",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/D74EA111-91AA-4566-95B5-7148D1499A4A.jpg?v=1748527794",
+          "width": 1170,
+          "height": 1346,
+          "alt": "Pleated Solara Shirt, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/AFEF887F-6603-4F55-AA42-649E11142C2D.jpg?v=1748527794",
+          "width": 1170,
+          "height": 1355,
+          "alt": "Pleated Solara Shirt, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/8066A459-FB55-4A83-9509-431A7983303B.jpg?v=1748527794&width=2000",
+          "width": 2000,
+          "height": 1125,
+          "alt": "Pleated Solara Shirt, image 3"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_1710.jpg?v=1748527794",
+          "width": 1192,
+          "height": 1621,
+          "alt": "Pleated Solara Shirt, image 4"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_2561.jpg?v=1748527794&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Pleated Solara Shirt, image 5"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_2563.jpg?v=1748527794&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Pleated Solara Shirt, image 6"
+        }
+      ],
+      "collections": [
+        "summer-vol-2"
+      ],
+      "createdAt": "2025-04-20T17:01:47+05:00"
+    },
+    {
+      "handle": "summer-shirt-summer-clothes-summer-fabric-womens-shirt-unisex-shirt-waffle-shirt",
+      "title": "Waffle Shirt",
+      "price": 3590,
+      "description": [
+        "This waffle weave shirt is the perfect summer piece, blending comfort and style effortlessly. Made from lightweight, breathable fabric, it’s ideal for staying cool in warm weather. The button-down design and Cuban collar add a relaxed, fashionable touch, making it essential for casual summer clothes. The unique texture of the waffle weave fabric enhances its cool, airy feel while giving the shirt a distinct, modern look. Featuring vibrant embroidery in accent orange on the side, this shirt adds a bold detail to your summer wardrobe. Perfect for both daywear and evening outings, it’s a must-have summer shirt.",
+        "Size: Small | Medium | Large | X-large",
+        "Design Details: A waffle weave shirt designed with delicate embroidery on the side with an accent to give it a unique style.",
+        "Stretch: None",
+        "Transparency: None",
+        "Lining: None",
+        "Hand-feel: Soft"
+      ],
+      "details": [],
+      "sizes": [
+        {
+          "variantId": "48249765691692",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "48249765724460",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "48249765757228",
+          "size": "L",
+          "available": true
+        },
+        {
+          "variantId": "48249765789996",
+          "size": "XL",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Waffle_shirt_summer_shirt.jpg?v=1737231343",
+          "width": 1355,
+          "height": 1995,
+          "alt": "Waffle Shirt, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Waffle-shirt-summer_shirt.jpg?v=1737231473",
+          "width": 1308,
+          "height": 1524,
+          "alt": "Waffle Shirt, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/waffle_shirt_flat_image.jpg?v=1737231494",
+          "width": 1756,
+          "height": 1274,
+          "alt": "Waffle Shirt, image 3"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/7957EB01-FBC1-4783-B117-D4B2388F799B.png?v=1748623462",
+          "width": 1336,
+          "height": 1655,
+          "alt": "Waffle Shirt, image 4"
+        }
+      ],
+      "collections": [
+        "summer-collection-oversize-shirt-streetwear"
+      ],
+      "createdAt": "2024-03-21T15:40:07+05:00"
+    },
+    {
+      "handle": "summer-shirt-summer-clothes-shirt-summer-fabric-dobby-shirt",
+      "title": "Dobby Shirt",
+      "price": 3290,
+      "description": [
+        "This pastel green summer shirt with a Cuban collar is the perfect addition to any summer clothing collection. Crafted from a breathable and comfortable summer fabric, it ensures you stay cool and stylish during warm days. The shirt’s subtle dobby weave texture enhances its summer appeal, offering a sophisticated yet relaxed look. Ideal for casual outings, this summer shirt can be paired effortlessly with shorts or chinos. The Cuban collar adds a distinctive touch, making it an essential piece for your summer clothing wardrobe. Lightweight, breathable, and easy to wear, this summer shirt is the ultimate choice for sunny days."
+      ],
+      "details": [
+        {
+          "label": "Design Details",
+          "value": "A button-down shirt with dobby weave pattern giving it a very unique surface texture."
+        },
+        {
+          "label": "Stretch",
+          "value": "None"
+        },
+        {
+          "label": "Transparency",
+          "value": "None"
+        },
+        {
+          "label": "Lining",
+          "value": "None"
+        },
+        {
+          "label": "Hand feel",
+          "value": "extremely soft"
+        },
+        {
+          "label": "Material",
+          "value": "100% Cotton"
+        }
+      ],
+      "sizes": [
+        {
+          "variantId": "48249775227180",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "48249775259948",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "48249775292716",
+          "size": "L",
+          "available": true
+        },
+        {
+          "variantId": "48249775325484",
+          "size": "XL",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/summer_dobby_shirt.jpg?v=1737216467",
+          "width": 1417,
+          "height": 1813,
+          "alt": "Dobby Shirt, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Summer_dobby-shirt_zoom-in.jpg?v=1737216543",
+          "width": 1419,
+          "height": 1867,
+          "alt": "Dobby Shirt, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Summer_dobby_shirt_full_image.jpg?v=1737216604",
+          "width": 1756,
+          "height": 1274,
+          "alt": "Dobby Shirt, image 3"
+        }
+      ],
+      "collections": [
+        "summer-collection-oversize-shirt-streetwear"
+      ],
+      "createdAt": "2024-03-21T15:43:16+05:00"
+    },
+    {
+      "handle": "check-set-cord-set-summer-clothes-summer-fabric-shirt-embroidery",
+      "title": "Check Set",
+      "price": 4890,
+      "description": [
+        "This check set is a perfect addition to your summer clothes collection, combining style, comfort, and versatility. Crafted from breathable fabric, this design is intended to keep you cool and stylish on warm days. The textured fabric adds a unique touch, while the button-down design and half-length sleeves make this shirt both classic and contemporary."
+      ],
+      "details": [
+        {
+          "label": "Design Type",
+          "value": "A chic cord set for your everyday summer wear, designed with pockets and an embroidered patchwork."
+        },
+        {
+          "label": "Stretch",
+          "value": "None"
+        },
+        {
+          "label": "Transparency",
+          "value": "None"
+        },
+        {
+          "label": "Hand feel",
+          "value": "Soft"
+        },
+        {
+          "label": "Lining",
+          "value": "None"
+        },
+        {
+          "label": "Material",
+          "value": "100% Cotton, check weave"
+        },
+        {
+          "label": "Note",
+          "value": "Kindly note that colour would be slightly different from the images"
+        }
+      ],
+      "sizes": [
+        {
+          "variantId": "48249809109292",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "48249809142060",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "48249809174828",
+          "size": "L",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Summer_set-_Clothes-_cord_set.jpg?v=1737215042",
+          "width": 1335,
+          "height": 1772,
+          "alt": "Check Set, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Summer_cord-set.jpg?v=1737215100",
+          "width": 1381,
+          "height": 1861,
+          "alt": "Check Set, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Summer_cord_set_closeup.jpg?v=1737215154",
+          "width": 1371,
+          "height": 1850,
+          "alt": "Check Set, image 3"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/summer_shirt-flat_image_embroidery.jpg?v=1737215221",
+          "width": 1756,
+          "height": 1274,
+          "alt": "Check Set, image 4"
+        }
+      ],
+      "collections": [
+        "summer-collection-oversize-shirt-streetwear"
+      ],
+      "createdAt": "2024-03-21T15:58:21+05:00"
+    },
+    {
+      "handle": "black-shirt-summer-shirt-summer-clothes-shirt",
+      "title": "Black Shirt",
+      "price": 3690,
+      "description": [
+        "This black shirt is a perfect addition to your summer clothes collection, combining style, comfort, and versatility. Crafted from breathable fabric, it is designed to keep you cool and stylish during warm days. The textured fabric adds a unique touch, while the button-down design and half-length sleeves make this shirt both classic and contemporary. Ideal for casual outings or semi-formal occasions, this summer shirt pairs effortlessly with a variety of wardrobe staples. Whether dressing up or down, enjoy the lightweight fabric and relaxed fit that make this shirt an essential piece for your summer clothes lineup."
+      ],
+      "details": [
+        {
+          "label": "Design Details",
+          "value": "Seersucker effect on black shirt- giving it a chic style- button-down shirt"
+        },
+        {
+          "label": "Stretch",
+          "value": "Slight"
+        },
+        {
+          "label": "Transparency",
+          "value": "None"
+        },
+        {
+          "label": "Hand-feel",
+          "value": "Soft"
+        },
+        {
+          "label": "Material",
+          "value": "100% cotton"
+        },
+        {
+          "label": "Occasion",
+          "value": "casual/formal"
+        }
+      ],
+      "sizes": [
+        {
+          "variantId": "48633809764652",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "48633809830188",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "48633809862956",
+          "size": "L",
+          "available": true
+        },
+        {
+          "variantId": "48633809895724",
+          "size": "XL",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Black_shirt-Summer_shirt_-_front_side.jpg?v=1737213284",
+          "width": 1446,
+          "height": 1879,
+          "alt": "Black Shirt, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Summer_shirt-_black_shirt-_button_down_shirt.png?v=1737213609",
+          "width": 1620,
+          "height": 2160,
+          "alt": "Black Shirt, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/black_shirt-_button_down_shirt-_flat_iamge.jpg?v=1737213899",
+          "width": 1756,
+          "height": 1274,
+          "alt": "Black Shirt, image 3"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/black_shirt-_summer_shirt-_close_up.jpg?v=1737214043&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Black Shirt, image 4"
+        }
+      ],
+      "collections": [
+        "summer-collection-oversize-shirt-streetwear"
+      ],
+      "createdAt": "2024-04-19T14:03:01+05:00"
+    },
+    {
+      "handle": "shirt-summer-shirt-unisex-shirt-summer-clothes-printed-shirt-polka-print-shirt",
+      "title": "Polka Print Shirt",
+      "price": 3290,
+      "description": [
+        "This button-down shirt with polka dot print is a stylish addition to any wardrobe, perfect for casual and smart-casual looks. Featuring a trendy Cuban collar shirt design, it offers a relaxed, open neckline that enhances comfort and adds a retro vibe. Crafted from high-quality, breathable fabric, this polka dot shirt for men and women is available in different sizes to ensure a perfect fit. Ideal for summer fashion, this versatile polka print shirt pairs effortlessly with jeans, chinos, or shorts. Stay comfortable and on-trend with this must-have casual button-down shirt, designed to blend timeless style with modern flair.",
+        "Size: Small | Medium | Large | X-large"
+      ],
+      "details": [],
+      "sizes": [
+        {
+          "variantId": "48634056016172",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "48634056081708",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "48634056114476",
+          "size": "L",
+          "available": true
+        },
+        {
+          "variantId": "48634056147244",
+          "size": "XL",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Polka_Print_Shirt_summer-shirt_summer-clothes.jpg?v=1737228129",
+          "width": 1422,
+          "height": 1838,
+          "alt": "Polka Print Shirt, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Polka_print_summer_shirt_zoom_in.jpg?v=1737228441",
+          "width": 1407,
+          "height": 1867,
+          "alt": "Polka Print Shirt, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Polka_print_shirt_flat_image.jpg?v=1737228801",
+          "width": 1756,
+          "height": 1274,
+          "alt": "Polka Print Shirt, image 3"
+        }
+      ],
+      "collections": [
+        "summer-collection-oversize-shirt-streetwear"
+      ],
+      "createdAt": "2024-04-19T14:07:49+05:00"
+    },
+    {
+      "handle": "winter-shirt-summer-shirt-shirt-grey-stitch-shirt",
+      "title": "Grey Stitch Shirt",
+      "price": 3690,
+      "description": [
+        "This grey stitch shirt is a perfect addition to your summer and winter clothes collection, combining style, comfort, and versatility. Crafted from breathable fabric, it is designed to keep you cool and stylish during warm and cool days. The textured fabric adds a unique touch, while the button-down design and half-length sleeves make this shirt both classic and contemporary. Ideal for casual outings or semi-formal occasions, this unique shirt pairs effortlessly with a variety of wardrobe staples. Whether dressing up or down, enjoy the lightweight fabric and relaxed fit that make this shirt an essential piece for your summer and winter clothes lineup."
+      ],
+      "details": [
+        {
+          "label": "Design Details",
+          "value": "A button-down shirt has a squared rice stitch fabric giving it a unique touch."
+        },
+        {
+          "label": "Stretch",
+          "value": "Slight"
+        },
+        {
+          "label": "Transparency",
+          "value": "None"
+        },
+        {
+          "label": "Lining",
+          "value": "None"
+        },
+        {
+          "label": "Hand feel",
+          "value": "Soft"
+        }
+      ],
+      "sizes": [
+        {
+          "variantId": "48634344603948",
+          "size": "S",
+          "available": false
+        },
+        {
+          "variantId": "48634344669484",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "48634344702252",
+          "size": "L",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Grey_stitch_shirt_winter-shirt_summer-shirt.jpg?v=1737226770",
+          "width": 1303,
+          "height": 1856,
+          "alt": "Grey Stitch Shirt, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Grey-stitch-shirt_summer-shirt_winter-shirt.jpg?v=1737226860",
+          "width": 1416,
+          "height": 1844,
+          "alt": "Grey Stitch Shirt, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/grey-stitch-shirt_winter-shirt_summer-shirt.jpg?v=1737227070",
+          "width": 1756,
+          "height": 1274,
+          "alt": "Grey Stitch Shirt, image 3"
+        }
+      ],
+      "collections": [
+        "summer-collection-oversize-shirt-streetwear"
+      ],
+      "createdAt": "2024-04-19T14:11:30+05:00"
+    },
+    {
+      "handle": "long-coat-denim-coat-winter-coat-winter-clothing-reverse-reverie",
+      "title": "Reverse Reverie",
+      "price": 5590,
+      "description": [
+        "This long denim coat is the perfect winter wardrobe essential for women, offering both style and functionality. Made from high-quality denim fabric, it features a sturdy, classic design on one side, with traditional stitching, pockets, and a timeless blue wash. The reverse side is equally stylish, featuring a softer, smoother fabric that offers a more refined look. This reversible coat allows you to switch between two fashionable looks depending on your mood or the occasion. Ideal for cold weather, it provides warmth and comfort while adding a fashionable edge to your winter clothes collection. A versatile, must-have female coat."
+      ],
+      "details": [
+        {
+          "label": "Design Details",
+          "value": "A reversible long denim coat, worn both inside out."
+        },
+        {
+          "label": "Stretch",
+          "value": "Slight"
+        },
+        {
+          "label": "Transparency",
+          "value": "None"
+        },
+        {
+          "label": "Lining",
+          "value": "Double sided"
+        }
+      ],
+      "sizes": [
+        {
+          "variantId": "47737227313452",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "47737227346220",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "47737227378988",
+          "size": "L",
+          "available": true
+        },
+        {
+          "variantId": "47737227411756",
+          "size": "XL",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Reverse_Reverie_long-denim-coat.jpg?v=1737229800",
+          "width": 1037,
+          "height": 1666,
+          "alt": "Reverse Reverie, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Reverse_reverie_long-denim-coat_reverse-side.jpg?v=1737229895&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Reverse Reverie, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Reverse_reverie_long-coat_denim-coat.jpg?v=1737230239",
+          "width": 1330,
+          "height": 2364,
+          "alt": "Reverse Reverie, image 3"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/reverse_reverie_long_denim_coat_close_up.jpg?v=1737230401&width=2000",
+          "width": 2000,
+          "height": 2902,
+          "alt": "Reverse Reverie, image 4"
+        }
+      ],
+      "collections": [
+        "winter-collection-streetwear"
+      ],
+      "createdAt": "2024-01-10T12:49:17+05:00"
+    },
+    {
+      "handle": "winter-coat-winter-clothes-winter-vest-winter-fabric-poseidon-vest",
+      "title": "Poseidon",
+      "price": 3890,
+      "description": [
+        "Inspired by traditional Japanese aesthetics, this vest brings timeless charm to winter clothes with a modern twist. Crafted from sleek grey fabric, it features a delicate rice stitch pattern that adds texture and depth while maintaining a refined appearance. Designed as a versatile layering piece, it pairs effortlessly with coats and jackets for extra warmth and style. Its tailored fit and lightweight construction enhances comfort, making it ideal for winter layering. Perfect for those seeking unique craftsmanship, this vest blends cultural inspiration with contemporary fashion, offering a sophisticated addition to any winter wardrobe rooted in elegance and quality fabric."
+      ],
+      "details": [
+        {
+          "label": "Design Detail",
+          "value": "A Japanese-inspired vest, paired with the boxing rice stitch fabric to enhance its look."
+        },
+        {
+          "label": "Stretch",
+          "value": "Slight"
+        },
+        {
+          "label": "Lining",
+          "value": "Yes"
+        },
+        {
+          "label": "Hand feel",
+          "value": "Soft"
+        }
+      ],
+      "sizes": [
+        {
+          "variantId": "47737195233580",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "47737195266348",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "47737195299116",
+          "size": "L",
+          "available": true
+        },
+        {
+          "variantId": "47737195331884",
+          "size": "XL",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Poseidon_vest_winter-vest_winter-clothes.jpg?v=1737225649&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Poseidon, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Poseidon-vest_female-vest_winter-vest.jpg?v=1737225799",
+          "width": 1330,
+          "height": 2364,
+          "alt": "Poseidon, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Poseidon-vest_winter-vest_female-vest.jpg?v=1737226052&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Poseidon, image 3"
+        }
+      ],
+      "collections": [
+        "winter-collection-streetwear"
+      ],
+      "createdAt": "2024-01-10T12:37:52+05:00"
+    },
+    {
+      "handle": "womens-vest-winter-clothes-female-vest-albus-41",
+      "title": "Albus-47",
+      "price": 3590,
+      "description": [
+        "Discover the elegance of our Winter Collection: Albus 47, a standout piece in white designed to elevate your seasonal wardrobe. This luxurious outerwear blends modern style with comfort, featuring a metallic print on chiffon and crafted with double-sided fabric for superior warmth and durability."
+      ],
+      "details": [
+        {
+          "label": "Fit type",
+          "value": "Small and medium"
+        },
+        {
+          "label": "Design",
+          "value": "White double-sided vest- with metallic print - with a loose cut"
+        },
+        {
+          "label": "Stretch",
+          "value": "Slight"
+        },
+        {
+          "label": "Hand feel",
+          "value": "Soft"
+        },
+        {
+          "label": "Lining",
+          "value": "Added"
+        },
+        {
+          "label": "Material",
+          "value": "Cotton and Chiffon"
+        },
+        {
+          "label": "Occasion",
+          "value": "Daily, casual"
+        }
+      ],
+      "sizes": [
+        {
+          "variantId": "47737163383084",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "47737163415852",
+          "size": "M",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/IMG_0334.jpg?v=1711272839",
+          "width": 1080,
+          "height": 1620,
+          "alt": "Albus-47, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/winter_vest.jpg?v=1737209319&width=2000",
+          "width": 2000,
+          "height": 2732,
+          "alt": "Albus-47, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/winter-vest-front_page.jpg?v=1737209517&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Albus-47, image 3"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Winter_vest_zoom_in.jpg?v=1737209572&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Albus-47, image 4"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/winter_vest_neckline.jpg?v=1737209634&width=2000",
+          "width": 2000,
+          "height": 2667,
+          "alt": "Albus-47, image 5"
+        }
+      ],
+      "collections": [
+        "winter-collection-streetwear"
+      ],
+      "createdAt": "2024-01-10T12:09:32+05:00"
+    },
+    {
+      "handle": "gloria-coat-winter-clothes-winter-womens-coat-pk",
+      "title": "Gloria Coat",
+      "price": 4690,
+      "description": [
+        "A sleeveless crop coat with a unique weave pattern is a stylish addition to winter clothes, combining warmth and elegance. Crafted from high-quality, insulating fabric, the intricate weave adds texture and depth, making it visually striking. Designed for versatility, its cropped silhouette provides modern flair, while the long front straps can be tied, draped, or wrapped for added warmth and customization. This winter outerwear piece balances fashion and function perfectly, ideal for layering over turtlenecks or sweaters. Its premium fabric ensures comfort and durability, making it a standout choice for anyone seeking distinctive, cozy winter clothing."
+      ],
+      "details": [
+        {
+          "label": "Design Details",
+          "value": "This sleeveless crop coat is the perfect outerwear for winter. It has a unique silhouette and an intricate weave pattern."
+        },
+        {
+          "label": "Stretch",
+          "value": "None"
+        },
+        {
+          "label": "Transparency",
+          "value": "None"
+        },
+        {
+          "label": "Hand feel",
+          "value": "Stiff"
+        },
+        {
+          "label": "Lining",
+          "value": "Yes"
+        }
+      ],
+      "sizes": [
+        {
+          "variantId": "47737177899308",
+          "size": "S",
+          "available": true
+        },
+        {
+          "variantId": "47737177932076",
+          "size": "M",
+          "available": true
+        },
+        {
+          "variantId": "47737177964844",
+          "size": "L",
+          "available": true
+        },
+        {
+          "variantId": "47737177997612",
+          "size": "XL",
+          "available": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/winter-_gloria-_coat.jpg?v=1737224123",
+          "width": 1198,
+          "height": 1680,
+          "alt": "Gloria Coat, image 1"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/winter_gloria_coat-_zoom_in.jpg?v=1737224277",
+          "width": 1080,
+          "height": 1620,
+          "alt": "Gloria Coat, image 2"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Winter_clothes_coat_gloria_moncler-jacket.jpg?v=1737224786",
+          "width": 1241,
+          "height": 1896,
+          "alt": "Gloria Coat, image 3"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/winter_coat_gloria-coat_zoom_in.jpg?v=1737225313&width=2000",
+          "width": 2000,
+          "height": 2479,
+          "alt": "Gloria Coat, image 4"
+        },
+        {
+          "src": "https://cdn.shopify.com/s/files/1/0854/2873/2204/files/Gloria_coat_crop_coat_winter_article_side_image.jpg?v=1737225504",
+          "width": 1260,
+          "height": 1680,
+          "alt": "Gloria Coat, image 5"
+        }
+      ],
+      "collections": [
+        "winter-collection-streetwear"
+      ],
+      "createdAt": "2024-01-10T12:32:26+05:00"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/* Brand tokens */
+@theme {
+  --color-brand: #ec5d2f;
+  --color-charcoal: #3b3b3d;
+  --color-ink: #0d0d0d;
+  --color-paper: #f6f6f4;
+  --color-stone: #f3f3f1;
+  --color-line: #e6e6e4;
+  --color-line-strong: #d6d6d4;
+  --color-mute: #6b6b6b;
+  --color-whatsapp: #25d366;
+
+  --spacing-gutter: clamp(16px, 3vw, 40px);
+  --spacing-section: 88px;
+  --container-page: 1440px;
+  --container-wide: 1600px;
+
+  --tracking-eyebrow: 0.3em;
+  --tracking-label: 0.16em;
+
+  --ease-editorial: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-panel: cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+@theme inline {
+  --font-sans: var(--font-jost);
+  --font-serif: var(--font-cormorant);
+  --font-script: var(--font-pinyon);
+  --font-heading: var(--font-jost);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+}
+
+/* shadcn semantic tokens mapped onto the Batsu palette */
+:root {
+  --background: #ffffff;
+  --foreground: #0d0d0d;
+  --card: #ffffff;
+  --card-foreground: #0d0d0d;
+  --popover: #ffffff;
+  --popover-foreground: #0d0d0d;
+  --primary: #0d0d0d;
+  --primary-foreground: #ffffff;
+  --secondary: #f6f6f4;
+  --secondary-foreground: #0d0d0d;
+  --muted: #f6f6f4;
+  --muted-foreground: #6b6b6b;
+  --accent: #f6f6f4;
+  --accent-foreground: #0d0d0d;
+  --destructive: #b23a00;
+  --border: #e6e6e4;
+  --input: #d6d6d4;
+  --ring: #ec5d2f;
+  --radius: 0.625rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 2px;
+  }
+}
+
+@utility eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+}
+
+@utility label-caps {
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
