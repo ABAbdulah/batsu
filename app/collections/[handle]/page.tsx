@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { WhatsAppButton } from "@/components/site/whatsapp-button";
 import { CollectionGrid, type GridProduct } from "@/components/collection/collection-grid";
 import { getCollection, getCollectionProducts, getCollections, getProduct } from "@/lib/db/queries";
 import { formatPrice } from "@/lib/format";
@@ -126,6 +127,7 @@ export default async function CollectionPage({ params }: PageProps<"/collections
       </section>
 
       <CollectionGrid products={gridProducts} feature={feature} />
+      <WhatsAppButton />
 
       {others.length > 0 && (
         <section aria-labelledby="explore" className="mx-auto max-w-page px-gutter pt-16 pb-24">

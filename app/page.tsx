@@ -6,6 +6,7 @@ import { MythsGrid } from "@/components/home/myths-grid";
 import { NextDrop } from "@/components/home/next-drop";
 import { ServiceStrip } from "@/components/home/service-strip";
 import { TeesBand } from "@/components/home/tees-band";
+import { WhatsAppButton } from "@/components/site/whatsapp-button";
 import { ProductCard } from "@/components/product/product-card";
 import { getHeroPieces } from "@/lib/data/home";
 import { getCollection, getCollectionProducts, getProduct, getProducts, getSettings } from "@/lib/db/queries";
@@ -70,6 +71,7 @@ export default async function HomePage() {
       {echoSkin && <NextDrop dropAt={settings.drop.at} teaser={settings.drop.teaser} backdrop={echoSkin.images[0]} />}
 
       <TeesBand tees={tees} />
+      <WhatsAppButton />
     </>
   );
 }
